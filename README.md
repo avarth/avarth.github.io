@@ -36,13 +36,6 @@ assets/   CSS and JS (minified + fingerprinted at build)
 static/   fonts, images, icons
 ```
 
-## Editing content
-
-All content lives in YAML / Markdown, separate from the templates: adding a
-publication, editing the bio, swapping an image, or connecting a domain each
-means editing one content file, never the HTML/CSS. The full guide is in
-**[MAINTENANCE.md](MAINTENANCE.md)**.
-
 ---
 
 © Aris Vartholomaios. Site content is the author's; the theme code is free to reuse.
