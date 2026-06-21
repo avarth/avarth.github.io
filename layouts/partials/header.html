@@ -5,7 +5,7 @@
 <header class="site-header">
   <div class="container header-inner">
     <a class="brand" href="{{ $home.RelPermalink }}" aria-label="{{ $name }}">
-      <span class="dot" aria-hidden="true"></span>{{ $name }}
+      <span class="dot" aria-hidden="true"></span><span class="brand-name">{{ $name }}</span>
     </a>
 
     <nav class="nav primary" id="nav-primary" aria-label="{{ i18n `nav_primary` }}">
@@ -17,7 +17,7 @@
 
     <div class="controls">
       {{ if $other }}
-      <a class="ctrl lang-switch" href="{{ $other.RelPermalink }}" hreflang="{{ $other.Site.Language.Lang }}" lang="{{ $other.Site.Language.Lang }}" aria-label="{{ i18n `lang_other_full` }}">{{ i18n "lang_other" }}</a>
+      <a class="ctrl lang-switch" href="{{ $other.RelPermalink }}" hreflang="{{ $other.Site.Language.Lang }}" lang="{{ $other.Site.Language.Lang }}" aria-label="{{ i18n `lang_other_full` }}"><span class="lang-full">{{ i18n "lang_other" }}</span><span class="lang-short">{{ $other.Site.Language.Lang | upper }}</span></a>
       {{ end }}
       <button class="ctrl" type="button" data-print aria-label="{{ i18n `download_cv` }}" title="{{ i18n `download_cv` }}">
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9V4a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v5M6 18H5a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2h-1M7 14h10v7H7z"/></svg>
@@ -26,7 +26,7 @@
         <span class="icon-sun" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.6M12 18.9v2.6M2.5 12h2.6M18.9 12h2.6M5 5l1.8 1.8M17.2 17.2 19 19M19 5l-1.8 1.8M6.8 17.2 5 19"/></svg></span>
         <span class="icon-moon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M20 14.5A8 8 0 0 1 9.5 4 7.5 7.5 0 1 0 20 14.5Z"/></svg></span>
       </button>
-      <button class="ctrl nav-toggle" type="button" aria-expanded="false" aria-controls="nav-primary" aria-label="{{ i18n `menu` }}">{{ i18n "menu" }}</button>
+      <button class="ctrl nav-toggle" type="button" aria-expanded="false" aria-controls="nav-primary" aria-label="{{ i18n `menu` }}" title="{{ i18n `menu` }}"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg></button>
     </div>
   </div>
 </header>
