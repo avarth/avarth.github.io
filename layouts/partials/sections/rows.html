@@ -1,0 +1,26 @@
+{{- /* Generic CV-style rows section. Params: lang, data, id, idx, title, lead? */ -}}
+{{- $lang := .lang -}}
+<section class="section" id="{{ .id }}" aria-labelledby="{{ .id }}-h">
+  <div class="container">
+    <div class="section-head">
+      <h2 class="section-title" id="{{ .id }}-h"><span class="idx num" aria-hidden="true">{{ .idx }}</span> {{ .title }}</h2>
+      {{ with .lead }}<p class="section-lead">{{ . }}</p>{{ end }}
+    </div>
+    <div class="rows reveal">
+      {{ range .data }}
+        {{ $when := cond (eq $lang "el") .when_el .when_en }}
+        {{ $what := cond (eq $lang "el") .what_el .what_en }}
+        {{ $where := cond (eq $lang "el") .where_el .where_en }}
+        {{ $note := cond (eq $lang "el") .note_el .note_en }}
+        <div class="row">
+          <div class="row-when num">{{ $when }}</div>
+          <div>
+            <div class="row-what">{{ $what }}</div>
+            {{ with $where }}<div class="row-where">{{ . }}</div>{{ end }}
+            {{ with $note }}<div class="row-note">{{ . }}</div>{{ end }}
+          </div>
+        </div>
+      {{ end }}
+    </div>
+  </div>
+</section>

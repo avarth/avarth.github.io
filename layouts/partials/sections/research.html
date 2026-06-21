@@ -1,0 +1,19 @@
+{{- $lang := .Site.Language.Lang -}}
+<section class="section" id="research" aria-labelledby="research-h">
+  <div class="container">
+    <div class="section-head">
+      <h2 class="section-title" id="research-h"><span class="idx num" aria-hidden="true">01</span> {{ i18n "section_research" }}</h2>
+      <p class="section-lead">{{ i18n "section_research_lead" }}</p>
+    </div>
+    <div class="cols2">
+      {{ range hugo.Data.threads }}
+        {{ $title := cond (eq $lang "el") .title_el .title_en }}
+        {{ $body := cond (eq $lang "el") .body_el .body_en }}
+        <div class="interest reveal">
+          <h3>{{ $title }}</h3>
+          <p>{{ $body }}</p>
+        </div>
+      {{ end }}
+    </div>
+  </div>
+</section>

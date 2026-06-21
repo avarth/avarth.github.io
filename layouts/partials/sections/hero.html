@@ -1,0 +1,31 @@
+{{- $p := .Site.Params -}}
+{{- $lang := .Site.Language.Lang -}}
+{{- $name := cond (eq $lang "el") $p.authorDisplayEl $p.authorDisplayEn -}}
+{{- $role := cond (eq $lang "el") $p.jobTitleEl $p.jobTitleEn -}}
+{{- $affil := cond (eq $lang "el") $p.affiliationEl $p.affiliationEn -}}
+<section class="section hero" aria-labelledby="hero-name">
+  <div class="container hero-grid">
+    <div class="hero-text reveal">
+      <h1 class="hero-name" id="hero-name">{{ $name }}</h1>
+      <p class="hero-role">{{ $role }}</p>
+      <p class="hero-affil">{{ $affil }}</p>
+      <div class="hero-bio">{{ .Content }}</div>
+      <nav class="hero-contact" aria-label="{{ i18n `nav_contact` }}">
+        <a class="link" href="mailto:{{ $p.email }}">{{ $p.email }}</a>
+        <a class="link" href="https://orcid.org/{{ $p.orcid }}" rel="me noopener">ORCID</a>
+        <a class="link" href="https://scholar.google.com/citations?user={{ $p.scholar }}" rel="me noopener">Google Scholar</a>
+        <a class="link" href="https://github.com/{{ $p.github }}" rel="me noopener">GitHub</a>
+      </nav>
+      <div class="hero-cta"><button class="btn" type="button" data-print>{{ i18n "download_cv" }}</button></div>
+    </div>
+    <div class="hero-aside reveal">
+      <figure class="portrait">
+        <img src="{{ "img/portrait.jpg" | relURL }}" width="928" height="1120"
+             alt="{{ $name }}" fetchpriority="high"
+             sizes="(max-width: 56rem) 22rem, 33vw"
+             srcset="{{ "img/portrait-720.jpg" | relURL }} 720w, {{ "img/portrait.jpg" | relURL }} 928w">
+      </figure>
+      {{ with .Params.punch }}<p class="hero-punch">{{ . }}</p>{{ end }}
+    </div>
+  </div>
+</section>

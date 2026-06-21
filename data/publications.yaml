@@ -1,0 +1,460 @@
+# ============================================================================
+# Publications — single source for both the "Selected work" section (home)
+# and the full /publications/ page.
+#
+# HOW TO ADD A PAPER (no template edits):
+#   1. Copy a block below.
+#   2. Set `type` to one of: journal | greek_journal | conference |
+#      national | book | under_review | other
+#   3. Set `status` to: published | under_review | forthcoming
+#   4. To show it on the home "Selected work" list, add `featured: true`
+#      and a `rank` (lower = higher up).
+#   5. `doi` is the bare DOI (no https://). Use `url` for non-DOI links.
+#
+# IMPORTANT: never mark an "under_review" paper as published.
+# ============================================================================
+
+# ----------------------------------------------------------------------------
+# Peer-reviewed international journal articles
+# ----------------------------------------------------------------------------
+- key: J1
+  type: journal
+  year: 2025
+  authors: "Vartholomaios, A."
+  title: "Detection and clustering of urban form types with machine learning: insights into Thessaloniki's urban planning and evolution"
+  venue: "Computational Urban Science"
+  details: "5:51"
+  doi: "10.1007/s43762-025-00206-9"
+  impact: "IF 3.5"
+  status: published
+  featured: true
+  rank: 1
+
+- key: J2
+  type: journal
+  year: 2025
+  authors: "Vartholomaios, A. & Lagarias, A."
+  title: "Mapping Urban Segregation with GeoAI: Street View Perceptions and Socio-Spatial Inequality in Thessaloniki, Greece"
+  venue: "Land"
+  details: "14(10)"
+  doi: "10.3390/land14102083"
+  impact: "IF 3.2"
+  status: published
+  featured: true
+  rank: 2
+
+- key: J3
+  type: journal
+  year: 2025
+  authors: "Ampatzidis, D., Vartholomaios, A., Dermitzoglou, N., Perperidou, D. G. & Moschopoulos, G."
+  title: "The Local Area Distortion Factor (LADF): Resolving Property Area and Spatial Deviations from Geodetic Transformations in the Greek Cadastre"
+  venue: "Land"
+  details: "14(5), 1071"
+  doi: "10.3390/land14051071"
+  impact: "IF 3.2"
+  status: published
+
+- key: J4
+  type: journal
+  year: 2023
+  authors: "Sylliris, A., Papagiannakis, A. & Vartholomaios, A."
+  title: "Improving the Climate Resilience of Urban Road Networks: A Simulation of Microclimate and Air Quality Interventions in a Typology of Streets in Thessaloniki Historic Centre"
+  venue: "Land"
+  details: "12(2), 414"
+  doi: "10.3390/land12020414"
+  impact: "IF 3.9"
+  status: published
+
+- key: J5
+  type: journal
+  year: 2021
+  authors: "Vartholomaios, A., Chatzidimitriou, A. & Ioannidis, K."
+  title: "Estimating the influence of building and urban form on the thermal loads of urban dwellings in the Mediterranean climate using machine learning"
+  venue: "Energy Sources, Part B: Economics, Planning, and Policy"
+  details: "16(8)"
+  doi: "10.1080/15567249.2021.1916796"
+  impact: "IF 3.2"
+  status: published
+
+- key: J6
+  type: journal
+  year: 2021
+  authors: "Vartholomaios, A."
+  title: "Classification of the influence of urban canyon geometry and reflectance on seasonal solar irradiation in three European cities"
+  venue: "Sustainable Cities and Society"
+  details: "75, 103379"
+  doi: "10.1016/j.scs.2021.103379"
+  impact: "IF 5.1"
+  cites: "20"
+  status: published
+
+- key: J7
+  type: journal
+  year: 2019
+  authors: "Vartholomaios, A."
+  title: "A machine learning approach to modelling solar irradiation of urban and terrain 3D models"
+  venue: "Computers, Environment and Urban Systems"
+  details: "78"
+  doi: "10.1016/j.compenvurbsys.2019.101387"
+  impact: "IF 4.0"
+  cites: "35"
+  status: published
+  featured: true
+  rank: 5
+
+- key: J8
+  type: journal
+  year: 2019
+  authors: "Vartholomaios, A."
+  title: "A geospatial analysis of the influence of landscape and climate on the location of Greek vernacular settlements using GIS"
+  venue: "Applied Geomatics"
+  details: "11(2), 197–213"
+  doi: "10.1007/s12518-019-00254-x"
+  status: published
+
+- key: J9
+  type: journal
+  year: 2017
+  authors: "Sarafidis, D., Koukoulis, G., Dinakis, L., Paraschakis, I., Arvanitis, A., Lafazani, P., Papadopoulou, M. & Vartholomaios, A."
+  title: "An on-line interactive Municipal Information System for the reporting and management of issues related to the operation of a Municipality and the service of its residents"
+  venue: "South-Eastern European Journal of Earth Observation and Geomatics"
+  details: "6, 1–10"
+  status: published
+
+- key: J10
+  type: journal
+  year: 2017
+  authors: "Vartholomaios, A."
+  title: "A parametric sensitivity analysis of the influence of urban form on domestic energy consumption for heating and cooling in a Mediterranean city"
+  venue: "Sustainable Cities and Society"
+  details: "28, 135–145"
+  doi: "10.1016/j.scs.2016.09.006"
+  impact: "IF 5.1"
+  cites: "150"
+  status: published
+  featured: true
+  rank: 3
+
+- key: J11
+  type: journal
+  year: 2015
+  authors: "Vartholomaios, A."
+  title: "The Residential Solar Block envelope: A method for enabling the development of compact urban blocks with high passive solar potential"
+  venue: "Energy and Buildings"
+  details: "99, 303–312"
+  doi: "10.1016/j.enbuild.2015.04.046"
+  impact: "IF 4.6"
+  cites: "60"
+  status: published
+  featured: true
+  rank: 4
+
+# ----------------------------------------------------------------------------
+# Greek-language journal articles
+# ----------------------------------------------------------------------------
+- key: JG1
+  type: greek_journal
+  year: 2023
+  authors: "Vartholomaios, A., Andreou, E., Antoniou, A., Laskos, K. & Axarli, K."
+  title: "Application of energy signature method to analyze the energy consumption patterns before and during the COVID-19 pandemic in two public office buildings in Thessaloniki, Greece"
+  venue: "Technical Annals (Τεχνικά Χρονικά, TCG)"
+  url: "https://ejournals.epublishing.ekt.gr/index.php/ta/article/download/34722/26413"
+  status: published
+
+# ----------------------------------------------------------------------------
+# Books, chapters & textbooks
+# ----------------------------------------------------------------------------
+- key: B1
+  type: book
+  year: 2025
+  authors: "Vartholomaios, A."
+  title: "A Structured Approach to Zero-Emission Urban Regeneration: Integrating Planning, Innovation, and Governance for Scalable Urban Transformation"
+  venue: "In Vardopoulos, I. & Passas, I. (eds.), Futureproofed Sustainability Amidst Climate Change Polycrisis, IGI Global"
+  details: "279–316"
+  doi: "10.4018/979-8-3373-2327-5.ch008"
+  status: published
+
+- key: B2
+  type: book
+  year: 2024
+  lang: el
+  authors: "Christodoulou, C., Vartholomaios, A. & Oikonomou, M."
+  authors_el: "Χριστοδούλου, Χ., Βαρθολομαίος, Α. & Οικονόμου, Μ."
+  title: "Sustainable (?) Urban Design: A Handbook of Principles and Processes"
+  title_el: "Βιώσιμος (;) Αστικός Σχεδιασμός: Εγχειρίδιο Βασικών Στοιχείων και Διαδικασιών"
+  venue: "Kallipos+, Hellenic Ministry of Education"
+  venue_el: "Κάλλιπος+, Υπουργείο Παιδείας"
+  doi: "10.57713/kallipos-418"
+  status: published
+  featured: true
+  rank: 6
+
+- key: B3
+  type: book
+  year: 2021
+  lang: el
+  authors: "Vartholomaios, A."
+  authors_el: "Βαρθολομαίος, Α."
+  title: "Mapping the thermal comfort of the monumental axis of Aristotelous"
+  title_el: "Χαρτογράφηση της Θερμικής Άνεσης στον Μνημειακό Άξονα της Αριστοτέλους"
+  venue: "In Kalogirou, N. et al. (eds.), The well-known axis of Aristotelous, University Studio Press"
+  venue_el: "Στο Καλογήρου, Ν. κ.ά. (επιμ.), Ο γνωστός άξονας της Αριστοτέλους, University Studio Press"
+  details: "180–183"
+  status: published
+
+- key: B4
+  type: book
+  year: 2020
+  authors: "Sakantamis, K., Chourmouziadou, K. & Vartholomaios, A."
+  title: "Passive Design Strategies in Pursuit of Architectural Identity: The New ACT Student Center"
+  venue: "In Dabija, A.-M. (ed.), Energy Efficient Building Design, Springer Nature"
+  details: "185–198"
+  doi: "10.1007/978-3-030-40671-4_12"
+  status: published
+
+- key: B5
+  type: book
+  year: 2015
+  lang: el
+  authors: "Vartholomaios, A. & Karnavou, E."
+  authors_el: "Βαρθολομαίος, Α. & Καρνάβου, Ε."
+  title: "'Once a forest, always a forest'? The politics of deforestation in Greece"
+  title_el: "«Άπαξ δάσος πάντα δάσος»; Οι πολιτικές της αποδάσωσης στην Ελλάδα"
+  venue: "In Mind, Soul and Knowledge Cartographies (Festschrift for M. Myridis), Ziti Publications"
+  venue_el: "Στο Χαρτογραφίες Νου, Ψυχής και Γνώσης (Τιμητικός Τόμος Μ. Μυρίδη), Εκδόσεις Ζήτη"
+  details: "411–427"
+  status: published
+
+# ----------------------------------------------------------------------------
+# International conference papers
+# ----------------------------------------------------------------------------
+- key: IC1
+  type: conference
+  year: 2023
+  authors: "Vartholomaios, A."
+  title: "Follow the shade: Detection of optimally shaded pedestrian paths within the historic city center of Thessaloniki"
+  venue: "IOP Conference Series: Earth and Environmental Science, 1196(1), 012070 (SBE23, Thessaloniki)"
+  doi: "10.1088/1755-1315/1196/1/012070"
+  status: published
+
+- key: IC2
+  type: conference
+  year: 2023
+  authors: "Andreou, E., Vartholomaios, A., Antoniou, A. & Axarli, K."
+  title: "Feasibility study of the UXindoor framework in two public office buildings: A standardized approach to scoring indoor user experience"
+  venue: "E3S Web of Conferences, 436, 01003 (SBE23, Thessaloniki)"
+  doi: "10.1051/e3sconf/202343601003"
+  status: published
+
+- key: IC3
+  type: conference
+  year: 2020
+  authors: "Vartholomaios, A., Chatzidimitriou, A. & Ioannidis, K."
+  title: "Metamodeling the influence of form and shading on the heating and cooling loads of a residential zone in the Mediterranean"
+  venue: "8th European Conference on Renewable Energy Systems, Istanbul"
+  status: published
+
+- key: IC4
+  type: conference
+  year: 2020
+  authors: "Vartholomaios, A. & Kalogirou, N."
+  title: "Optimisation of outdoor shading devices with thermal comfort criteria: The case of the Venetian Port of Chania"
+  venue: "IOP Conference Series: Earth and Environmental Science, 410, 012058"
+  doi: "10.1088/1755-1315/410/1/012058"
+  status: published
+
+- key: IC5
+  type: conference
+  year: 2015
+  authors: "Vartholomaios, A."
+  title: "Climatic urban design strategies for the Mediterranean"
+  venue: "2nd Changing Cities Conference, Porto Heli"
+  status: published
+
+- key: IC6
+  type: conference
+  year: 2015
+  authors: "Vartholomaios, A."
+  title: "The impact of green space distribution on the microclimate of idealised urban grids"
+  venue: "ICUC9: 9th International Conference on Urban Climate, Toulouse"
+  status: published
+
+- key: IC7
+  type: conference
+  year: 2015
+  authors: "Kalogirou, N. et al."
+  title: "Reanimating open space: The environmental transformation of a coastal node in Thessaloniki"
+  venue: "2nd Changing Cities Conference, Porto Heli"
+  status: published
+
+- key: IC8
+  type: conference
+  year: 2014
+  authors: "Vartholomaios, A. et al."
+  title: "Identifying 'crisis-proof' places: An assessment of public space accessibility using Space Syntax and GIS in the Municipality of Kalamaria, Greece"
+  venue: "10th International Congress of the Hellenic Geographical Society, Thessaloniki"
+  status: published
+
+- key: IC9
+  type: conference
+  year: 2013
+  authors: "Vartholomaios, A. et al."
+  title: "The green space factor as a tool for regulating the urban microclimate in vegetation-deprived Greek cities"
+  venue: "1st Changing Cities Conference, Skiathos"
+  status: published
+
+# ----------------------------------------------------------------------------
+# National (Greek) conference papers
+# ----------------------------------------------------------------------------
+# Greek-origin entries carry `lang: el` + *_el fields: English (translated) is
+# shown on the EN site with "(in Greek)"; the Greek original shows on /el/.
+- key: NC1
+  type: national
+  year: 2025
+  lang: el
+  authors: "Vartholomaios, A."
+  authors_el: "Βαρθολομαίος, Α."
+  title: "The third dimension in the street-layout plan: is the transition from the building line to the building volume feasible?"
+  title_el: "Η τρίτη διάσταση στο ρυμοτομικό σχέδιο: Είναι εφικτή η μετάβαση από την οικοδομική γραμμή στον οικοδομικό όγκο;"
+  venue: "7th Panhellenic Conference on Planning & Regional Development, Volos"
+  venue_el: "7ο Πανελλήνιο Συνέδριο ΠΧΠΑ, Βόλος"
+  status: published
+
+- key: NC2
+  type: national
+  year: 2024
+  lang: el
+  authors: "Vartholomaios, A."
+  authors_el: "Βαρθολομαίος, Α."
+  title: "Urban form and sustainability as a product of rules: an algorithmic investigation of the environmental incentives of the New Building Code (NOK)"
+  title_el: "Αστική μορφή και βιωσιμότητα ως προϊόν κανόνων: μια αλγοριθμική διερεύνηση των περιβαλλοντικών κινήτρων του ΝΟΚ"
+  venue: "DPRD Workshop (Esperida), Volos"
+  venue_el: "Εσπερίδα ΤΜΧΠΠΑ, Βόλος"
+  status: published
+
+- key: NC3
+  type: national
+  year: 2022
+  lang: el
+  authors: "Sylliris, A., Papagiannakis, A. & Vartholomaios, A."
+  authors_el: "Συλλίρης, Α., Παπαγιαννάκης, Α. & Βαρθολομαίος, Α."
+  title: "Simulation of microclimate-improvement interventions in a typology of road axes: the historic centre of Thessaloniki"
+  title_el: "Προσομοίωση επεμβάσεων βελτίωσης του μικροκλίματος σε τυπολογία οδικών αξόνων: η περίπτωση του ιστορικού κέντρου της Θεσσαλονίκης"
+  venue: "6th Panhellenic Conference on Planning & Regional Development, Thessaloniki"
+  venue_el: "6ο Πανελλήνιο Συνέδριο ΠΧΠΑ, Θεσσαλονίκη"
+  status: published
+
+- key: NC4
+  type: national
+  year: 2019
+  lang: el
+  authors: "Vartholomaios, A. et al."
+  authors_el: "Βαρθολομαίος, Α. κ.ά."
+  title: "Improvement of microclimatic conditions in Stamatis Karamanlis Square"
+  title_el: "Βελτίωση Μικροκλιματικών Συνθηκών στην Πλατεία Σταμάτη Καραμανλή"
+  venue: "Interdisciplinary Conference 'City Under Construction', Thessaloniki"
+  venue_el: "Διεπιστημονικό Συνέδριο «Πόλη Υπό Κατασκευή», Θεσσαλονίκη"
+  status: published
+
+- key: NC5
+  type: national
+  year: 2018
+  lang: el
+  authors: "Vartholomaios, A. et al."
+  authors_el: "Βαρθολομαίος, Α. κ.ά."
+  title: "Barriers and opportunities for integrating climate design criteria into Greek urban planning"
+  title_el: "Εμπόδια και ευκαιρίες για ένταξη κλιματικών κριτηρίων σχεδιασμού στην ελληνική πολεοδομία"
+  venue: "11th National Conference on Renewable Energy Sources, Thessaloniki"
+  venue_el: "11ο Εθνικό Συνέδριο Ήπιων Μορφών Ενέργειας, Θεσσαλονίκη"
+  status: published
+
+- key: NC6
+  type: national
+  year: 2017
+  lang: el
+  authors: "Kalogirou, N. et al."
+  authors_el: "Καλογήρου, Ν. κ.ά."
+  title: "Recomposing the sustainable image of place: Fanarioton Square and the Dim. Gounari terminus"
+  title_el: "Ανασυνθέτοντας τη βιώσιμη εικόνα του τόπου: Πλατεία Φαναριωτών και απόληξη Δημ. Γούναρη"
+  venue: "2nd Panhellenic Conference on Place Marketing & Branding, Larissa"
+  venue_el: "2ο Πανελλήνιο Συνέδριο Marketing και Branding Τόπου, Λάρισα"
+  status: published
+
+- key: NC7
+  type: national
+  year: 2010
+  lang: el
+  authors: "Vartholomaios, A. & Kousoulakou, A."
+  authors_el: "Βαρθολομαίος, Α. & Κουσουλάκου, Α."
+  title: "A digital interactive map of the Aristotle University of Thessaloniki"
+  title_el: "Ένας ψηφιακός διαδραστικός χάρτης του Α.Π.Θ."
+  venue: "11th National Conference on Cartography, Nafplio"
+  venue_el: "11ο Εθνικό Συνέδριο Χαρτογραφίας, Ναύπλιο"
+  status: published
+
+# ----------------------------------------------------------------------------
+# Under review & submitted
+# ----------------------------------------------------------------------------
+- key: UR1
+  type: under_review
+  year: 2026
+  authors: "Vartholomaios, A. & Perperidou, D."
+  title: "Can urban planners rely on Large Language Models? Prompt-framing experiments with frontier models on two contested masterplans"
+  venue: "Smart Cities (MDPI)"
+  status: under_review
+
+- key: UR2
+  type: under_review
+  year: 2026
+  authors: "Ampatzidis, D., Vartholomaios, A., Perperidou, D. & Demirtzoglou, N."
+  title: "Probabilistic modelling of parcel area uncertainty: implications for land administration and urban planning"
+  venue: "Urban Geomatics"
+  status: under_review
+
+- key: UR3
+  type: under_review
+  year: 2026
+  authors: "Vartholomaios, A."
+  title: "Urban buzzwords in practice: rhetoric, method, and the politics of diffusion"
+  venue: "Global NEST Journal"
+  status: under_review
+
+# ----------------------------------------------------------------------------
+# Other scholarly work
+# ----------------------------------------------------------------------------
+- key: O1
+  type: other
+  year: 2025
+  lang: el
+  authors: "Vartholomaios, A."
+  authors_el: "Βαρθολομαίος, Α."
+  title: "Generative Artificial Intelligence in teaching Spatial Planning, Urban Planning and Regional Development"
+  title_el: "Παραγωγική Τεχνητή Νοημοσύνη στη Διδασκαλία της Χωροταξίας, Πολεοδομίας και Περιφερειακής Ανάπτυξης"
+  venue: "Ta Nea tis Chorotaxias, vol. 91, DPRD, Volos"
+  venue_el: "Τα Νέα της Χωροταξίας, τ. 91, ΤΜΧΠΠΑ, Βόλος"
+  status: published
+
+- key: O2
+  type: other
+  year: 2025
+  lang: el
+  authors: "Vartholomaios, A."
+  authors_el: "Βαρθολομαίος, Α."
+  title: "Mapping the image of Thessaloniki with street-view photographs and AI"
+  title_el: "Χαρτογράφηση της εικόνας της Θεσσαλονίκης με φωτογραφίες δρόμου και ΤΝ"
+  venue: "Social Atlas of Thessaloniki"
+  venue_el: "Κοινωνικός Άτλας Θεσσαλονίκης"
+  doi: "10.26262/wrp0-gs90"
+  status: published
+
+- key: O3
+  type: other
+  year: 2026
+  lang: el
+  authors: "Vartholomaios, A., Lagarias, A. & Pantazis, P. (eds.)"
+  authors_el: "Βαρθολομαίος, Α., Λαγαρίας, Α. & Πανταζής, Π. (επιμ.)"
+  title: "Proceedings of the 7th Panhellenic Conference on Planning & Regional Development"
+  title_el: "Πρακτικά 7ου Πανελλήνιου Συνεδρίου ΠΧΠΑ"
+  venue: "DPRD, University of Thessaly, Volos"
+  venue_el: "ΤΜΧΠΠΑ, Πανεπιστήμιο Θεσσαλίας, Βόλος"
+  status: published

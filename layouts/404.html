@@ -1,0 +1,10 @@
+{{ define "main" }}
+<section class="section hero" style="border-top:0">
+  <div class="container">
+    <p class="label" style="color:var(--red-ink)">404</p>
+    <h1 class="hero-name" style="font-size:clamp(2.2rem,1.4rem+4vw,4rem)">{{ i18n "err_404_title" }}</h1>
+    <p class="hero-role">{{ i18n "err_404_lead" }}</p>
+    <p style="margin-top:1.75rem"><a class="btn" href="{{ .Site.Home.RelPermalink }}">{{ i18n "back_home" }} <span class="arr" aria-hidden="true">→</span></a></p>
+  </div>
+</section>
+{{ end }}

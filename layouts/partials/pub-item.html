@@ -1,0 +1,30 @@
+{{- $p := .p -}}
+{{- $isEL := eq .lang "el" -}}
+{{- /* Greek-origin works carry lang:el plus *_el fields. Show the English
+       translation + "(in Greek)" on the EN site; the Greek original on EL. */ -}}
+{{- $title := cond (and $isEL (isset $p "title_el") (ne $p.title_el "")) $p.title_el $p.title -}}
+{{- $venue := cond (and $isEL (isset $p "venue_el") (ne $p.venue_el "")) $p.venue_el $p.venue -}}
+{{- $authorsRaw := cond (and $isEL (isset $p "authors_el") (ne $p.authors_el "")) $p.authors_el $p.authors -}}
+{{- $authors := $authorsRaw | replaceRE "(Vartholomaios, A\\.|Βαρθολομαίος, Α\\.)" "<strong>$1</strong>" -}}
+{{- $markGreek := and (eq (default "" $p.lang) "el") (not $isEL) -}}
+{{- $url := "" -}}
+{{- with $p.doi }}{{ $url = printf "https://doi.org/%s" . }}{{ end -}}
+{{- if and (not $url) $p.url }}{{ $url = $p.url }}{{ end -}}
+<article class="pub">
+  <div class="pub-year num">{{ $p.year }}</div>
+  <div class="pub-main">
+    <h4 class="pub-title">
+      {{- if $url -}}<a href="{{ $url }}" rel="noopener">{{ $title }}</a>{{- else -}}{{ $title }}{{- end -}}
+      {{- if $markGreek }} <span class="pub-lang">({{ i18n "in_greek" }})</span>{{ end -}}
+    </h4>
+    <p class="pub-meta">{{ $authors | safeHTML }}{{ with $venue }} · <span class="pub-venue">{{ . }}</span>{{ end }}{{ with $p.details }}, {{ . }}{{ end }}</p>
+    {{- $hasstatus := ne $p.status "published" -}}
+    {{- if or $hasstatus $p.impact $p.cites -}}
+    <div class="pub-tags">
+      {{ if $hasstatus }}<span class="tag tag-status">{{ i18n (printf "status_%s" $p.status) }}</span>{{ end }}
+      {{ with $p.impact }}<span class="tag">{{ . }}</span>{{ end }}
+      {{ with $p.cites }}<span class="tag">{{ . }} {{ i18n "citations" }}</span>{{ end }}
+    </div>
+    {{- end -}}
+  </div>
+</article>

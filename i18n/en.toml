@@ -1,0 +1,74 @@
+# UI strings (English).
+
+skip_link        = "Skip to content"
+
+# Navigation
+nav_research     = "Research"
+nav_publications = "Publications"
+nav_teaching     = "Teaching"
+nav_software     = "Software"
+nav_contact      = "Contact"
+nav_primary      = "Primary navigation"
+menu             = "Menu"
+
+# Controls
+theme_toggle    = "Switch colour theme"
+lang_other      = "Ελληνικά"
+lang_other_full = "Read in Greek"
+
+# Footer / contact
+hero_coordinates = "Coordinates"
+footer_role   = "Assistant Professor of Urban Planning"
+footer_built  = "Static site, built with Hugo. No trackers, no cookies."
+footer_source = "Source on GitHub"
+
+# Sections
+section_publications  = "Publications"
+section_research      = "Research"
+section_research_lead = "Urban planning guided by the environment, using computational methods."
+section_teaching      = "Teaching"
+section_education     = "Education"
+section_experience    = "Experience"
+section_recognition   = "Recognition"
+section_software      = "Software"
+section_software_lead = "Computational tools developed alongside the research."
+
+image_placeholder = "Project image"
+authored_textbook = "Authored textbook"
+
+# Tools / publications
+repository    = "Repository"
+doi           = "DOI"
+live_demo     = "Live atlas"
+download_cv   = "Print / save as PDF"
+in_greek      = "in Greek"
+
+# Publication statuses
+status_under_review = "Under review"
+status_submitted    = "Submitted"
+status_published    = "Published"
+status_forthcoming  = "Forthcoming"
+
+# Publication groups
+group_journals       = "Peer-reviewed journal articles"
+group_greek_journals = "Greek-language journal articles"
+group_conferences    = "International conference papers"
+group_national       = "National conference papers"
+group_books          = "Books, chapters & textbooks"
+group_under_review   = "Under review & submitted"
+group_other          = "Other scholarly work"
+
+# Metrics
+citations    = "citations"
+h_index      = "h-index"
+on_scholar   = "Google Scholar"
+on_scopus    = "Scopus"
+metrics_asof = "as of"
+metrics_note = "Citation counts are self-reported and refreshed periodically; see the linked profiles for live figures."
+
+# Misc
+back_home = "Back to home"
+
+# 404
+err_404_title = "Not found"
+err_404_lead  = "This page does not exist."

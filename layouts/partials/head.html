@@ -1,0 +1,58 @@
+{{- $site := .Site -}}
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+{{- /* Title + description */ -}}
+{{- $title := "" -}}
+{{- if .IsHome -}}
+  {{- $title = printf "%s · %s" $site.Title (i18n "footer_role") -}}
+{{- else -}}
+  {{- $title = printf "%s · %s" .Title $site.Title -}}
+{{- end -}}
+<title>{{ $title }}</title>
+{{- $desc := or .Description .Params.description $site.Params.description -}}
+<meta name="description" content="{{ $desc }}">
+<meta name="author" content="{{ $site.Params.authorName }}">
+<meta name="robots" content="index, follow, max-image-preview:large">
+
+{{- /* Canonical + language alternates */ -}}
+<link rel="canonical" href="{{ .Permalink }}">
+{{- range .AllTranslations }}
+<link rel="alternate" hreflang="{{ .Site.Language.Lang }}" href="{{ .Permalink }}">
+{{- end }}
+{{- /* x-default points to the default-language (English) version */ -}}
+{{- $enset := where .AllTranslations "Site.Language.Lang" "en" -}}
+{{- if $enset }}
+<link rel="alternate" hreflang="x-default" href="{{ (index $enset 0).Permalink }}">
+{{- else }}
+<link rel="alternate" hreflang="x-default" href="{{ .Permalink }}">
+{{- end }}
+
+{{- /* Theme colour */ -}}
+<meta name="theme-color" content="{{ $site.Params.themeColorLight }}">
+<meta name="color-scheme" content="light dark">
+
+{{- /* Favicon (cadastral mark) */ -}}
+<link rel="icon" href="{{ "favicon.svg" | relURL }}" type="image/svg+xml">
+<link rel="icon" href="{{ "favicon.ico" | relURL }}" sizes="any">
+<link rel="apple-touch-icon" href="{{ "img/apple-touch-icon.png" | relURL }}">
+
+{{- /* Self-hosted IBM Plex Sans (variable). Preload the subset that renders
+       this language's primary text; the rest load on demand via unicode-range. */ -}}
+{{- if eq .Site.Language.Lang "el" }}
+<link rel="preload" href="{{ "fonts/plexsans-greek.woff2" | relURL }}" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="{{ "fonts/plexsans-latin.woff2" | relURL }}" as="font" type="font/woff2" crossorigin>
+{{- else }}
+<link rel="preload" href="{{ "fonts/plexsans-latin.woff2" | relURL }}" as="font" type="font/woff2" crossorigin>
+{{- end }}
+
+{{- /* Stylesheet (minified + fingerprinted) */ -}}
+{{- $css := resources.Get "css/main.css" | minify | fingerprint -}}
+<link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
+
+{{- /* No-flash theme + JS-capability flag (runs before paint) */ -}}
+<script>
+(function(){var d=document.documentElement;try{var t=localStorage.getItem('theme');if(t==='dark'||t==='light'){d.setAttribute('data-theme',t);}}catch(e){}d.className=d.className.replace('no-js','js');try{if(window.matchMedia&&!matchMedia('(prefers-reduced-motion: reduce)').matches){d.classList.add('anim');setTimeout(function(){d.classList.add('anim-done');},1500);}}catch(e){}}());
+</script>
+
+{{ partial "seo.html" . }}

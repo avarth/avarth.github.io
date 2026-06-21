@@ -1,0 +1,37 @@
+{{- $p := .Site.Params -}}
+{{- $lang := .Site.Language.Lang -}}
+{{- $name := cond (eq $lang "el") $p.authorDisplayEl $p.authorDisplayEn -}}
+{{- $office := cond (eq $lang "el") $p.officeEl $p.officeEn -}}
+{{- $locality := cond (eq $lang "el") $p.localityEl $p.localityEn -}}
+<footer class="site-footer" id="contact">
+  <div class="container footer-inner">
+    <div class="footer-id">
+      <div class="footer-name">{{ $name }}</div>
+      <div class="footer-role">{{ i18n "footer_role" }}</div>
+      <div class="footer-contact">
+        <a class="link" href="mailto:{{ $p.email }}">{{ $p.email }}</a>
+        <span>{{ $office }}</span>
+      </div>
+    </div>
+
+    <nav class="socials" aria-label="{{ i18n `nav_contact` }}">
+      {{ with $p.orcid }}<a class="social" href="https://orcid.org/{{ . }}" rel="me noopener">ORCID</a>{{ end }}
+      {{ with $p.scholar }}<a class="social" href="https://scholar.google.com/citations?user={{ . }}" rel="me noopener">Scholar</a>{{ end }}
+      {{ with $p.github }}<a class="social" href="https://github.com/{{ . }}" rel="me noopener">GitHub</a>{{ end }}
+      {{ with $p.linkedin }}<a class="social" href="https://www.linkedin.com/in/{{ . }}/" rel="me noopener">LinkedIn</a>{{ end }}
+      {{ with $p.researchgate }}<a class="social" href="https://www.researchgate.net/profile/{{ . }}" rel="me noopener">ResearchGate</a>{{ end }}
+    </nav>
+
+    <div class="affil">
+      <img src="{{ (cond (eq $lang `el`) `img/uth-el.png` `img/uth-en.png`) | relURL }}"
+           alt="{{ cond (eq $lang `el`) `Πανεπιστήμιο Θεσσαλίας` `University of Thessaly` }}" height="42" loading="lazy">
+      <img src="{{ `img/dept.png` | relURL }}"
+           alt="{{ cond (eq $lang `el`) $p.affiliationShortEl $p.affiliationShortEn }}" height="42" loading="lazy">
+    </div>
+
+    <div class="colophon">
+      <span>© {{ now.Year }} {{ $p.authorName }} · {{ $locality }}</span>
+      <span>{{ i18n "footer_built" }}{{ with $p.github }} · <a href="https://github.com/{{ . }}" rel="noopener">{{ i18n "footer_source" }}</a>{{ end }}</span>
+    </div>
+  </div>
+</footer>

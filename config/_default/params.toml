@@ -1,0 +1,63 @@
+# ============================================================================
+# Site parameters: identity, contact, profiles, bibliometrics.
+# These are the single source of truth for the header, footer and JSON-LD.
+# Safe to edit by hand / via the GitHub web UI (see README).
+# ============================================================================
+
+# --- Identity ---------------------------------------------------------------
+authorName    = "Aristotelis Vartholomaios"
+authorNameEl  = "Αριστοτέλης Βαρθολομαίος"
+authorNameLatin = "Aristotelis Vartholomaios"     # for JSON-LD / alternateName
+authorDisplayEn = "Aris Vartholomaios"            # display name (hero, header)
+authorDisplayEl = "Άρης Βαρθολομαίος"
+
+jobTitleEn    = "Assistant Professor of Urban Planning"
+jobTitleEl    = "Επίκουρος Καθηγητής Πολεοδομίας"
+disciplineEn  = "Urban Planning"
+disciplineEl  = "Πολεοδομία"
+
+# About-section facts (the "Software" fact is generated from data/tools.yaml)
+aboutFocusEn     = "Computational urban planning"
+aboutFocusEl     = "Υπολογιστική πολεοδομία"
+aboutEducationEn = "MEng · MA Oxford Brookes · PhD AUTh"
+aboutEducationEl = "MEng · MA Oxford Brookes · PhD ΑΠΘ"
+
+affiliationEn      = "Department of Planning and Regional Development, School of Engineering, University of Thessaly"
+affiliationEl      = "Τμήμα Μηχανικών Χωροταξίας, Πολεοδομίας και Περιφερειακής Ανάπτυξης, Πολυτεχνική Σχολή, Πανεπιστήμιο Θεσσαλίας"
+affiliationShortEn = "University of Thessaly · DPRD"
+affiliationShortEl = "Πανεπιστήμιο Θεσσαλίας · ΤΜΧΠΠΑ"
+universityUrl      = "https://www.uth.gr/"
+
+# --- Location (cadastral coordinate locator in the hero) --------------------
+localityEn = "Volos, Greece"
+localityEl = "Βόλος, Ελλάδα"
+latitude   = "39.36"
+longitude  = "22.94"
+officeEn   = "Office Γ24, 2nd floor, Pedion Areos, 383 34 Volos"
+officeEl   = "Γραφείο Γ24, 2ος όροφος, Πεδίον Άρεως, 383 34 Βόλος"
+
+# --- Contact ---------------------------------------------------------------
+email = "avartholomaios@uth.gr"
+
+# --- Profiles (single source for links + JSON-LD sameAs) -------------------
+orcid        = "0000-0001-6177-1130"
+scholar      = "o4MWWKoAAAAJ"
+github       = "avarth"
+linkedin     = "aris-vartholomaios"
+researchgate = "Aristotelis-Vartholomaios-2"
+uthStaffUrl  = ""   # institutional staff page (prd.uth.gr) — add when published
+
+# --- Branding / meta -------------------------------------------------------
+ogImage         = "img/og.png"
+themeColorLight = "#ffffff"
+themeColorDark  = "#0e0e0d"
+
+# --- Bibliometrics (refresh before tenure milestones) ----------------------
+[bibliometrics]
+  asOf             = "June 2026"
+  asOfEl           = "Ιούνιο 2026"
+  scholarCitations = 524
+  scholarH         = 7
+  scopusCitations  = 306
+  scopusH          = 6
+  journalArticles  = 11

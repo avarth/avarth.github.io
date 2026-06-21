@@ -1,0 +1,23 @@
+# ============================================================================
+# Languages. English is the default (served at "/"); Greek lives at "/el/".
+# Per-language SEO descriptions live in each page's front matter; these are
+# the site-wide fallbacks.
+# ============================================================================
+
+[en]
+  label   = "English"
+  locale  = "en-GB"
+  weight  = 1
+  title   = "Aristotelis Vartholomaios"
+  [en.params]
+    localeCode  = "en-GB"
+    description = "Aristotelis Vartholomaios, Assistant Professor of Urban Planning at the University of Thessaly. Computational urban planner building open-source tools for urban form, environmental performance, and planning regulation."
+
+[el]
+  label   = "Ελληνικά"
+  locale  = "el-GR"
+  weight  = 2
+  title   = "Αριστοτέλης Βαρθολομαίος"
+  [el.params]
+    localeCode  = "el-GR"
+    description = "Αριστοτέλης Βαρθολομαίος, Επίκουρος Καθηγητής Πολεοδομίας στο Πανεπιστήμιο Θεσσαλίας. Υπολογιστική πολεοδομία και ανοιχτά εργαλεία για την αστική μορφή, την περιβαλλοντική επίδοση και τον πολεοδομικό κανόνα."

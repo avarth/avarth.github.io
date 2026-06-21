@@ -1,0 +1,13 @@
+# Hugo build output and caches
+/public/
+/resources/_gen/
+.hugo_build.lock
+
+# Local helper artifacts
+.tmpfonts/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp
+node_modules/

@@ -1,0 +1,44 @@
+{{- $lang := .Site.Language.Lang -}}
+{{- $b := .Site.Params.bibliometrics -}}
+{{- $asof := cond (eq $lang "el") $b.asOfEl $b.asOf -}}
+<section class="section" id="publications" aria-labelledby="publications-h">
+  <div class="container">
+    <div class="section-head">
+      <h2 class="section-title" id="publications-h"><span class="idx num" aria-hidden="true">02</span> {{ i18n "section_publications" }}</h2>
+    </div>
+
+    <div class="metrics">
+      <div class="metric"><div class="metric-n num">{{ $b.journalArticles }}</div><div class="metric-l">{{ i18n "group_journals" }}</div></div>
+      <div class="metric"><div class="metric-n num">{{ $b.scholarCitations }}</div><div class="metric-l"><a class="link" href="https://scholar.google.com/citations?user={{ .Site.Params.scholar }}" rel="me noopener">{{ i18n "citations" }} · {{ i18n "on_scholar" }}</a></div></div>
+      <div class="metric"><div class="metric-n num">{{ $b.scholarH }}</div><div class="metric-l">{{ i18n "h_index" }}</div></div>
+      <div class="metric"><div class="metric-n num">{{ $b.scopusCitations }}</div><div class="metric-l">{{ i18n "citations" }} · {{ i18n "on_scopus" }}</div></div>
+    </div>
+    <p class="metrics-note">{{ i18n "metrics_note" }} ({{ i18n "metrics_asof" }} {{ $asof }})</p>
+
+    {{- $groups := slice
+        (slice "journal" "group_journals")
+        (slice "greek_journal" "group_greek_journals")
+        (slice "book" "group_books")
+        (slice "conference" "group_conferences")
+        (slice "national" "group_national")
+        (slice "under_review" "group_under_review")
+        (slice "other" "group_other") -}}
+    {{- $n := 0 -}}
+    {{- range $groups -}}
+      {{- $type := index . 0 -}}{{- $key := index . 1 -}}
+      {{- $items := sort (where hugo.Data.publications "type" $type) "year" "desc" -}}
+      {{- with $items -}}
+        {{- $n = add $n 1 -}}
+        <div class="pubgroup" aria-labelledby="g-{{ $type }}">
+          <div class="pubgroup-head">
+            <h3 class="pubgroup-title" id="g-{{ $type }}">{{ i18n $key }}</h3>
+            <span class="pubgroup-count num">{{ len $items }}</span>
+          </div>
+          <div class="pub-list">
+            {{- range $items }}{{ partial "pub-item.html" (dict "p" . "lang" $lang) }}{{ end -}}
+          </div>
+        </div>
+      {{- end -}}
+    {{- end -}}
+  </div>
+</section>

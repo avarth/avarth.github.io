@@ -1,0 +1,74 @@
+# UI strings (Ελληνικά).
+
+skip_link        = "Μετάβαση στο περιεχόμενο"
+
+# Navigation
+nav_research     = "Έρευνα"
+nav_publications = "Δημοσιεύσεις"
+nav_teaching     = "Διδασκαλία"
+nav_software     = "Λογισμικό"
+nav_contact      = "Επικοινωνία"
+nav_primary      = "Κύρια πλοήγηση"
+menu             = "Μενού"
+
+# Controls
+theme_toggle    = "Εναλλαγή χρωματικού θέματος"
+lang_other      = "English"
+lang_other_full = "Read in English"
+
+# Footer / contact
+hero_coordinates = "Συντεταγμένες"
+footer_role   = "Επίκουρος Καθηγητής Πολεοδομίας"
+footer_built  = "Στατικός ιστότοπος, χτισμένος με Hugo. Χωρίς trackers, χωρίς cookies."
+footer_source = "Πηγαίος κώδικας στο GitHub"
+
+# Sections
+section_publications  = "Δημοσιεύσεις"
+section_research      = "Έρευνα"
+section_research_lead = "Πολεοδομικός σχεδιασμός με γνώμονα το περιβάλλον, χρησιμοποιώντας υπολογιστικές μεθόδους."
+section_teaching      = "Διδασκαλία"
+section_education     = "Σπουδές"
+section_experience    = "Εμπειρία"
+section_recognition   = "Διακρίσεις"
+section_software      = "Λογισμικό"
+section_software_lead = "Υπολογιστικά εργαλεία που αναπτύχθηκαν παράλληλα με την έρευνα."
+
+image_placeholder = "Εικόνα έργου"
+authored_textbook = "Συγγραφικό εγχειρίδιο"
+
+# Tools / publications
+repository    = "Αποθετήριο"
+doi           = "DOI"
+live_demo     = "Διαδραστικός άτλας"
+download_cv   = "Εκτύπωση / αποθήκευση ως PDF"
+in_greek      = "στα ελληνικά"
+
+# Publication statuses
+status_under_review = "Υπό κρίση"
+status_submitted    = "Υποβλήθηκε"
+status_published    = "Δημοσιευμένο"
+status_forthcoming  = "Υπό έκδοση"
+
+# Publication groups
+group_journals       = "Άρθρα σε διεθνή περιοδικά με κριτές"
+group_greek_journals = "Άρθρα σε ελληνικά περιοδικά"
+group_conferences    = "Ανακοινώσεις σε διεθνή συνέδρια"
+group_national       = "Ανακοινώσεις σε ελληνικά συνέδρια"
+group_books          = "Βιβλία, κεφάλαια & εγχειρίδια"
+group_under_review   = "Υπό κρίση & υποβληθέντα"
+group_other          = "Λοιπό επιστημονικό έργο"
+
+# Metrics
+citations    = "αναφορές"
+h_index      = "h-index"
+on_scholar   = "Google Scholar"
+on_scopus    = "Scopus"
+metrics_asof = "τον"
+metrics_note = "Οι αναφορές δηλώνονται από τον συγγραφέα και ανανεώνονται περιοδικά· δείτε τα συνδεδεμένα προφίλ για ζωντανά στοιχεία."
+
+# Misc
+back_home = "Επιστροφή στην αρχική"
+
+# 404
+err_404_title = "Δεν βρέθηκε"
+err_404_lead  = "Η σελίδα δεν υπάρχει."

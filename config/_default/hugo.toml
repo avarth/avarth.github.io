@@ -1,0 +1,56 @@
+# ============================================================================
+# Core Hugo configuration.
+# ----------------------------------------------------------------------------
+# DOMAIN SWAP (the only line to change when a custom domain is connected):
+#   baseURL  ->  "https://your-domain.gr/"
+# Then add a file  static/CNAME  containing  your-domain.gr  (see README).
+# ============================================================================
+
+baseURL = "https://avarth.github.io/"
+
+# Site title (per-language titles are set in languages.toml).
+title = "Aristotelis Vartholomaios"
+
+# --- Multilingual --------------------------------------------------------
+# English is served at "/", Greek at "/el/". Translations are linked by the
+# file-name suffix (_index.en.md  /  _index.el.md) inside the same content dir.
+defaultContentLanguage        = "en"
+defaultContentLanguageInSubdir = false
+
+# --- Output / discoverability -------------------------------------------
+enableRobotsTXT       = true   # generates /robots.txt from layouts/robots.txt
+enableInlineShortcodes = true
+capitalizeListTitles  = false
+disableKinds          = ["taxonomy", "term"]   # no tags/categories on this site
+disablePathToLower    = false
+
+[pagination]
+  pagerSize = 200   # never paginate the publications list
+
+[markup]
+  [markup.goldmark.renderer]
+    unsafe = true    # allow the small amount of inline HTML used in CV/about copy
+  [markup.goldmark.extensions]
+    [markup.goldmark.extensions.typographer]
+      disable = false
+
+# Minify the generated HTML on every build (no extra flag needed).
+[minify]
+  minifyOutput = true
+  [minify.tdewolff.html]
+    keepWhitespace = false
+
+[sitemap]
+  changefreq = "monthly"
+  filename   = "sitemap.xml"
+  priority   = 0.5
+
+# Outputs: HTML only (plus the auto sitemap). No RSS clutter.
+[outputs]
+  home    = ["HTML"]
+  page    = ["HTML"]
+  section = ["HTML"]
+
+[caches]
+  [caches.images]
+    maxAge = "720h"

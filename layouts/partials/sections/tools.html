@@ -1,0 +1,32 @@
+{{- $lang := .Site.Language.Lang -}}
+<section class="section" id="software" aria-labelledby="software-h">
+  <div class="container">
+    <div class="section-head">
+      <h2 class="section-title" id="software-h"><span class="idx num" aria-hidden="true">07</span> {{ i18n "section_software" }}</h2>
+      <p class="section-lead">{{ i18n "section_software_lead" }}</p>
+    </div>
+    <div class="software">
+      {{ range hugo.Data.tools }}
+        {{- $title := cond (and (eq $lang "el") (isset . "title_el") (ne (index . "title_el") "")) (index . "title_el") .title -}}
+        {{- $tagline := cond (eq $lang "el") .tagline_el .tagline_en -}}
+        {{- $body := cond (eq $lang "el") .body_el .body_en -}}
+        {{- $stats := cond (eq $lang "el") .stats_el .stats_en -}}
+        <article class="soft reveal">
+          <figure class="soft-fig">
+            {{ if .image }}<img src="{{ .image | relURL }}" alt="{{ $title }}" loading="lazy">
+            {{ else }}<div class="ph" role="img" aria-label="{{ $title }} · {{ i18n `image_placeholder` }}"><span>{{ i18n "image_placeholder" }}</span></div>{{ end }}
+          </figure>
+          <h3>{{ $title }}{{ with .acronym }} ({{ . }}){{ end }}</h3>
+          <p class="soft-sub">{{ $tagline }}</p>
+          <p>{{ $body }}</p>
+          {{ with $stats }}<p class="soft-stats">{{ . }}</p>{{ end }}
+          <div class="soft-links">
+            {{ with .links.repository }}<a class="btn btn-ghost" href="{{ . }}" rel="noopener">{{ i18n "repository" }} <span class="arr" aria-hidden="true">↗</span></a>{{ end }}
+            {{ with .links.doi }}<a class="btn btn-ghost" href="{{ . }}" rel="noopener">{{ i18n "doi" }} <span class="arr" aria-hidden="true">↗</span></a>{{ end }}
+            {{ with .links.live }}<a class="btn btn-ghost" href="{{ . }}" rel="noopener">{{ i18n "live_demo" }} <span class="arr" aria-hidden="true">↗</span></a>{{ end }}
+          </div>
+        </article>
+      {{ end }}
+    </div>
+  </div>
+</section>

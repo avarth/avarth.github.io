@@ -1,0 +1,38 @@
+{{- $lang := .Site.Language.Lang -}}
+{{- $title := cond (eq $lang "el") "Βιώσιμος (;) Αστικός Σχεδιασμός" "Sustainable (?) Urban Design" -}}
+<section class="section" id="teaching" aria-labelledby="teaching-h">
+  <div class="container">
+    <div class="section-head">
+      <h2 class="section-title" id="teaching-h"><span class="idx num" aria-hidden="true">03</span> {{ i18n "section_teaching" }}</h2>
+    </div>
+
+    {{- /* Featured authored textbook */ -}}
+    <div class="feature reveal">
+      <a class="feature-fig" href="https://dx.doi.org/10.57713/kallipos-418" rel="noopener" aria-label="{{ $title }}">
+        <img src="{{ "img/kallipos.jpg" | relURL }}" width="820" height="581" loading="lazy"
+             alt="{{ cond (eq $lang "el") "Εξώφυλλο εγχειριδίου" "Textbook cover" }}: {{ $title }}">
+      </a>
+      <div class="feature-txt">
+        <p class="feature-kicker">{{ i18n "authored_textbook" }}</p>
+        <h3 class="feature-title">{{ $title }}</h3>
+        <p class="feature-sub">{{ cond (eq $lang "el") "Εγχειρίδιο · Χριστοδούλου, Βαρθολομαίος & Οικονόμου · Κάλλιπος+, 2024" "A handbook · Christodoulou, Vartholomaios & Oikonomou · Kallipos+, 2024" }}</p>
+        <p class="feature-links"><a class="btn btn-ghost" href="https://dx.doi.org/10.57713/kallipos-418" rel="noopener">{{ i18n "doi" }} 10.57713/kallipos-418 <span class="arr" aria-hidden="true">↗</span></a></p>
+      </div>
+    </div>
+
+    <div class="rows reveal">
+      {{ range hugo.Data.teaching }}
+        {{ $when := cond (eq $lang "el") .when_el .when_en }}
+        {{ $what := cond (eq $lang "el") .what_el .what_en }}
+        {{ $where := cond (eq $lang "el") .where_el .where_en }}
+        <div class="row">
+          <div class="row-when num">{{ $when }}</div>
+          <div>
+            <div class="row-what">{{ $what }}</div>
+            {{ with $where }}<div class="row-where">{{ . }}</div>{{ end }}
+          </div>
+        </div>
+      {{ end }}
+    </div>
+  </div>
+</section>

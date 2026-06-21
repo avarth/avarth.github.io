@@ -1,0 +1,182 @@
+# ============================================================================
+# Open research software shown in the "Tools" section.
+# To add a tool: copy a block, fill the fields, set a new `num`. Empty link
+# fields are simply not rendered, so leave unknown URLs as "".
+# ============================================================================
+
+- id: usc
+  num: "01"
+  image: "img/usc.jpg"   # empty = placeholder
+  title: "Urban Solar Carver"
+  acronym: "USC"
+  tagline_en: "GPU-accelerated, solar-driven urban form-finding"
+  tagline_el: "Εύρεση αστικής μορφής με κριτήριο τον ήλιο, επιταχυνόμενη σε GPU"
+  body_en: >-
+    Computes the maximum developable building volume that still protects solar
+    and daylight access, turning the principle of a "right to light" into a
+    practical computational instrument for planning regulation. Ships as a
+    Python library with a Grasshopper connector.
+  body_el: >-
+    Υπολογίζει τον μέγιστο δομήσιμο όγκο που εξακολουθεί να προστατεύει την
+    ηλιακή πρόσβαση και τον φυσικό φωτισμό, μετατρέποντας την αρχή του
+    «δικαιώματος στον ήλιο» σε ένα πρακτικό υπολογιστικό εργαλείο για τον
+    πολεοδομικό κανόνα. Διατίθεται ως βιβλιοθήκη Python με σύνδεσμο για
+    Grasshopper.
+  stats_en: ""
+  stats_el: ""
+  released: "2026"
+  stack: ["Python", "GPU / CUDA", "Grasshopper", "Rhino", "voxel"]
+  paper_en: "ReSBE 2026 (forthcoming)"
+  paper_el: "ReSBE 2026 (υπό έκδοση)"
+  license_en: ""
+  license_el: ""
+  links:
+    repository: "https://github.com/avarth/UrbanSolarCarver"
+    doi: ""
+    live: ""
+
+- id: atlas
+  num: "02"
+  image: "img/atlas.jpg"   # empty = placeholder
+  title: "Greek Toponymic Atlas"
+  title_el: "Ψηφιακός Άτλας Ελληνικής Τοπωνυμίας"
+  acronym: ""
+  tagline_en: "An interactive atlas of Greek placenames"
+  tagline_el: "Διαδραστικός άτλας ελληνικών τοπωνυμίων"
+  body_en: >-
+    Built from Hellenic Military Geographical Service (ΓΥΣ) data through a
+    three-stage pipeline (morphological rules, LLM disambiguation and manual
+    validation) that turns raw toponyms into a navigable spatial dataset.
+  body_el: >-
+    Δημιουργήθηκε από δεδομένα της Γεωγραφικής Υπηρεσίας Στρατού (ΓΥΣ) μέσα από
+    έναν αγωγό τριών σταδίων (μορφολογικοί κανόνες, αποσαφήνιση με LLM και
+    χειροκίνητη επικύρωση), μετατρέποντας τα ακατέργαστα τοπωνύμια σε ένα
+    πλοηγήσιμο χωρικό σύνολο δεδομένων.
+  stats_en: "41,932 unique names · 90,592 features"
+  stats_el: "41.932 μοναδικά ονόματα · 90.592 σημεία"
+  released: "2026"
+  stack: ["Python", "GIS", "H3", "LLM", "web"]
+  paper_en: ""
+  paper_el: ""
+  license_en: "Code MIT · content CC BY-NC-ND 4.0"
+  license_el: "Κώδικας MIT · περιεχόμενο CC BY-NC-ND 4.0"
+  links:
+    # Zenodo DOI is the citable anchor. Add the live-atlas and repo URLs here
+    # when you want them public (leave "" to hide the link).
+    repository: ""
+    doi: "https://doi.org/10.5281/zenodo.19443730"
+    live: ""
+
+- id: uxindoor
+  num: "03"
+  image: "img/uxindoor.jpg"
+  title: "UXindoor"
+  acronym: ""
+  tagline_en: "A framework for scoring indoor user experience"
+  tagline_el: "Πλαίσιο αξιολόγησης της εμπειρίας χρήστη σε εσωτερικούς χώρους"
+  body_en: >-
+    A standardised framework for scoring the indoor user experience of
+    buildings, combining qualitative and quantitative indicators of
+    environmental quality. Developed and tested on public office buildings.
+  body_el: >-
+    Τυποποιημένο πλαίσιο για τη βαθμολόγηση της εμπειρίας χρήστη σε κτίρια, που
+    συνδυάζει ποιοτικούς και ποσοτικούς δείκτες περιβαλλοντικής ποιότητας.
+    Αναπτύχθηκε και δοκιμάστηκε σε δημόσια κτίρια γραφείων.
+  stats_en: ""
+  stats_el: ""
+  released: "2023"
+  stack: ["IEQ", "scoring", "buildings"]
+  paper_en: "SBE23 · E3S Web of Conferences"
+  paper_el: "SBE23 · E3S Web of Conferences"
+  license_en: ""
+  license_el: ""
+  links:
+    repository: ""
+    doi: "https://doi.org/10.1051/e3sconf/202343601003"
+    live: ""
+
+- id: authmap
+  num: "04"
+  image: "img/xartis-auth.jpg"
+  title: "Interactive map of AUTh"
+  title_el: "Διαδραστικός χάρτης του ΑΠΘ"
+  acronym: ""
+  tagline_en: "A digital interactive campus map"
+  tagline_el: "Ψηφιακός διαδραστικός χάρτης της πανεπιστημιούπολης"
+  body_en: >-
+    An early digital, interactive map of the Aristotle University of
+    Thessaloniki campus, presented at the National Conference on Cartography.
+  body_el: >-
+    Πρώιμος ψηφιακός, διαδραστικός χάρτης της πανεπιστημιούπολης του ΑΠΘ, που
+    παρουσιάστηκε στο Εθνικό Συνέδριο Χαρτογραφίας.
+  stats_en: ""
+  stats_el: ""
+  released: "2010"
+  stack: ["GIS", "web", "cartography"]
+  paper_en: ""
+  paper_el: ""
+  license_en: ""
+  license_el: ""
+  links:
+    repository: ""
+    doi: ""
+    live: ""
+
+- id: grasshopper
+  num: "05"
+  image: "img/gh.jpg"
+  title: "Rhino / Grasshopper workflows"
+  acronym: ""
+  tagline_en: "Parametric environmental simulation workflows"
+  tagline_el: "Παραμετρικά workflows περιβαλλοντικής προσομοίωσης"
+  body_en: >-
+    Various Grasshopper definitions developed over time, with an emphasis on
+    parametric environmental simulation: thermal comfort, climate/microclimate
+    and energy. Available on request.
+  body_el: >-
+    Έχουν αναπτυχθεί διάφορα κατά καιρούς με έμφαση στις παραμετρικές
+    περιβαλλοντικές προσομοιώσεις, θερμική άνεση, κλίμα/μικροκλίμα και ενέργεια.
+    Διατίθενται κατ' απαίτηση.
+  stats_en: ""
+  stats_el: ""
+  released: ""
+  stack: ["Grasshopper", "Rhino", "Ladybug Tools", "parametric"]
+  paper_en: ""
+  paper_el: ""
+  license_en: ""
+  license_el: ""
+  links:
+    repository: ""
+    doi: ""
+    live: ""
+
+- id: nok
+  num: "06"
+  image: "img/kinitra-nok.jpg"
+  title: "Building Code incentives calculator"
+  title_el: "Υπολογιστής περιβαλλοντικών κινήτρων ΝΟΚ"
+  acronym: ""
+  tagline_en: "Quantifying the environmental incentives of the Greek Building Code (NOK)"
+  tagline_el: "Ποσοτικοποίηση των περιβαλλοντικών κινήτρων του ΝΟΚ"
+  body_en: >-
+    An application that computes the effects of the environmental incentives
+    (bonus floor area and height) granted by the New Building Code (NOK,
+    articles 10 & 25) on building volume. It offers visualisations and a range
+    of useful indicators.
+  body_el: >-
+    Εφαρμογή που υπολογίζει τις επιδράσεις των περιβαλλοντικών κινήτρων (bonus
+    δόμησης και ύψους) που χορηγεί ο Νέος Οικοδομικός Κανονισμός (ΝΟΚ, άρθρα 10
+    & 25) στον όγκο των κτιρίων. Προσφέρει οπτικοποιήσεις και πλήθος χρήσιμων
+    δεικτών.
+  stats_en: ""
+  stats_el: ""
+  released: ""
+  stack: ["building code", "FAR", "calculator"]
+  paper_en: ""
+  paper_el: ""
+  license_en: ""
+  license_el: ""
+  links:
+    repository: ""
+    doi: ""
+    live: ""
