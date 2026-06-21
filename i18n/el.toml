@@ -30,11 +30,12 @@ section_teaching      = "Διδασκαλία"
 section_education     = "Σπουδές"
 section_experience    = "Εμπειρία"
 section_recognition   = "Διακρίσεις"
+section_memberships   = "Επαγγελματικές ιδιότητες"
 section_software      = "Λογισμικό"
 section_software_lead = "Υπολογιστικά εργαλεία που αναπτύχθηκαν παράλληλα με την έρευνα."
 
 image_placeholder = "Εικόνα έργου"
-authored_textbook = "Συγγραφικό εγχειρίδιο"
+authored_textbook = "Διδακτικό εγχειρίδιο"
 
 # Tools / publications
 repository    = "Αποθετήριο"

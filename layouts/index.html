@@ -5,6 +5,7 @@
   {{ partial "sections/teaching.html" . }}
   {{ partial "sections/rows.html" (dict "lang" .Site.Language.Lang "data" hugo.Data.experience "id" "experience"  "idx" "04" "title" (i18n "section_experience")) }}
   {{ partial "sections/rows.html" (dict "lang" .Site.Language.Lang "data" hugo.Data.education  "id" "education"   "idx" "05" "title" (i18n "section_education")) }}
-  {{ partial "sections/rows.html" (dict "lang" .Site.Language.Lang "data" hugo.Data.awards     "id" "recognition" "idx" "06" "title" (i18n "section_recognition")) }}
+  {{ partial "sections/rows.html" (dict "lang" .Site.Language.Lang "data" hugo.Data.awards      "id" "recognition" "idx" "06" "title" (i18n "section_recognition")) }}
+  {{ partial "sections/rows.html" (dict "lang" .Site.Language.Lang "data" hugo.Data.memberships "id" "memberships" "idx" "07" "title" (i18n "section_memberships")) }}
   {{ partial "sections/tools.html" . }}
 {{ end }}

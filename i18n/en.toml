@@ -30,11 +30,12 @@ section_teaching      = "Teaching"
 section_education     = "Education"
 section_experience    = "Experience"
 section_recognition   = "Recognition"
+section_memberships   = "Memberships"
 section_software      = "Software"
 section_software_lead = "Computational tools developed alongside the research."
 
 image_placeholder = "Project image"
-authored_textbook = "Authored textbook"
+authored_textbook = "Teaching handbook"
 
 # Tools / publications
 repository    = "Repository"
