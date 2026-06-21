@@ -265,8 +265,6 @@ h1, h2, h3, h4 { font-weight: 600; line-height: 1.06; letter-spacing: -0.018em; 
 .btn:hover .arr { transform: translateX(2px); }
 .btn-ghost { border-color: var(--line-2); color: var(--ink-2); }
 .btn-ghost:hover { color: var(--ink); background: transparent; border-color: var(--ink); }
-.btn-red { border-color: var(--red); background: var(--red); color: #fff; }
-.btn-red:hover { background: var(--red-ink); border-color: var(--red-ink); color: #fff; }
 .hero-cta { margin-top: 1.75rem; }
 
 /* ---- Metrics (publications page) ---------------------------------------- */

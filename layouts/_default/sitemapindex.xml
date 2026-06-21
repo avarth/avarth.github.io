@@ -1,0 +1,15 @@
+{{ printf "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\"?>" | safeHTML }}
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+{{- $sites := . -}}
+{{- range $sites -}}
+  {{- with .Home }}
+  <url>
+    <loc>{{ .Permalink }}</loc>
+    {{- range $sites }}{{ with .Home }}
+    <xhtml:link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .Permalink }}" />
+    {{- end }}{{ end }}
+    <xhtml:link rel="alternate" hreflang="x-default" href="{{ (index $sites 0).Home.Permalink }}" />
+  </url>
+  {{- end }}
+{{- end }}
+</urlset>

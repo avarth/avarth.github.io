@@ -7,17 +7,22 @@
 {{- $authorsRaw := cond (and $isEL (isset $p "authors_el") (ne $p.authors_el "")) $p.authors_el $p.authors -}}
 {{- $authors := $authorsRaw | replaceRE "(Vartholomaios, A\\.|Βαρθολομαίος, Α\\.)" "<strong>$1</strong>" -}}
 {{- $markGreek := and (eq (default "" $p.lang) "el") (not $isEL) -}}
+{{- /* Mark runs whose language differs from the page (WCAG 3.1.2).
+       Greek-origin entries always render in the page language; English-origin
+       entries render in English, so they are "foreign" on the Greek page. */ -}}
+{{- $displayLang := cond (eq (default "" $p.lang) "el") .lang "en" -}}
+{{- $foreign := ne $displayLang .lang -}}
 {{- $url := "" -}}
 {{- with $p.doi }}{{ $url = printf "https://doi.org/%s" . }}{{ end -}}
 {{- if and (not $url) $p.url }}{{ $url = $p.url }}{{ end -}}
 <article class="pub">
   <div class="pub-year num">{{ $p.year }}</div>
   <div class="pub-main">
-    <h4 class="pub-title">
+    <h4 class="pub-title"{{ if $foreign }} lang="{{ $displayLang }}"{{ end }}>
       {{- if $url -}}<a href="{{ $url }}" rel="noopener">{{ $title }}</a>{{- else -}}{{ $title }}{{- end -}}
       {{- if $markGreek }} <span class="pub-lang">({{ i18n "in_greek" }})</span>{{ end -}}
     </h4>
-    <p class="pub-meta">{{ $authors | safeHTML }}{{ with $venue }} · <span class="pub-venue">{{ . }}</span>{{ end }}{{ with $p.details }}, {{ . }}{{ end }}</p>
+    <p class="pub-meta">{{ $authors | safeHTML }}{{ with $venue }} · <span class="pub-venue"{{ if $foreign }} lang="{{ $displayLang }}"{{ end }}>{{ . }}</span>{{ end }}{{ with $p.details }}, {{ . }}{{ end }}</p>
     {{- $hasstatus := ne $p.status "published" -}}
     {{- if or $hasstatus $p.impact $p.cites -}}
     <div class="pub-tags">

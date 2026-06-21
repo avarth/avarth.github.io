@@ -4,19 +4,22 @@
 {{- else -}}{{- $title = printf "%s · %s" .Title $site.Title -}}{{- end -}}
 {{- $desc := or .Description .Params.description $site.Params.description -}}
 {{- $ogimg := $site.Params.ogImage | absURL -}}
-{{- $ogalt := printf "%s · %s" $site.Params.authorName (i18n "footer_role") -}}
+{{- $name := cond (eq $site.Language.Lang "el") $site.Params.authorNameEl $site.Params.authorName -}}
+{{- $ogalt := printf "%s · %s" $name (i18n "footer_role") -}}
+{{- $personId := printf "%s#person" $site.BaseURL -}}
 
 {{- /* Open Graph */ -}}
 <meta property="og:type" content="{{ if .IsHome }}profile{{ else }}website{{ end }}">
 <meta property="og:site_name" content="{{ $site.Title }}">
 <meta property="og:locale" content="{{ replace ($site.Language.Params.localeCode | default $site.Language.Lang) "-" "_" }}">
-{{- range .AllTranslations }}
+{{- range .Translations }}
 <meta property="og:locale:alternate" content="{{ replace (.Site.Language.Params.localeCode | default .Site.Language.Lang) "-" "_" }}">
 {{- end }}
 <meta property="og:title" content="{{ $title }}">
 <meta property="og:description" content="{{ $desc }}">
 <meta property="og:url" content="{{ .Permalink }}">
 <meta property="og:image" content="{{ $ogimg }}">
+<meta property="og:image:type" content="image/png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="{{ $ogalt }}">
@@ -32,7 +35,7 @@
 <meta name="twitter:image" content="{{ $ogimg }}">
 <meta name="twitter:image:alt" content="{{ $ogalt }}">
 
-{{- /* JSON-LD : Person */ -}}
+{{- /* JSON-LD : Person (stable @id, shared across pages) */ -}}
 {{- $sameAs := slice -}}
 {{- with $site.Params.orcid }}{{ $sameAs = $sameAs | append (printf "https://orcid.org/%s" .) }}{{ end -}}
 {{- with $site.Params.scholar }}{{ $sameAs = $sameAs | append (printf "https://scholar.google.com/citations?user=%s" .) }}{{ end -}}
@@ -42,10 +45,11 @@
 {{- $person := dict
   "@context" "https://schema.org"
   "@type" "Person"
+  "@id" $personId
   "name" $site.Params.authorName
   "alternateName" $site.Params.authorNameEl
   "jobTitle" (i18n "footer_role")
-  "url" $site.Home.Permalink
+  "url" $site.BaseURL
   "image" $ogimg
   "email" (printf "mailto:%s" $site.Params.email)
   "sameAs" $sameAs
@@ -54,6 +58,18 @@
   "knowsAbout" (slice "Urban planning" "Spatial planning" "Urban morphology" "GeoAI" "Machine learning" "Solar access" "Planning regulation" "Geospatial analysis")
 -}}
 <script type="application/ld+json">{{ $person | jsonify | safeJS }}</script>
+
+{{- /* JSON-LD : WebSite */ -}}
+{{- $website := dict
+  "@context" "https://schema.org"
+  "@type" "WebSite"
+  "@id" (printf "%s#website" $site.BaseURL)
+  "url" $site.BaseURL
+  "name" $site.Title
+  "inLanguage" (slice "en-GB" "el-GR")
+  "publisher" (dict "@id" $personId)
+-}}
+<script type="application/ld+json">{{ $website | jsonify | safeJS }}</script>
 
 {{- /* JSON-LD : ScholarlyArticle list (publications live on the home page) */ -}}
 {{- if .IsHome -}}
@@ -67,7 +83,7 @@
         "name" .title
         "datePublished" (printf "%d" .year)
         "isPartOf" .venue
-        "author" (dict "@type" "Person" "name" $site.Params.authorName)
+        "author" (dict "@type" "Person" "@id" $personId "name" $site.Params.authorName)
       -}}
       {{- with .doi }}{{ $a = merge $a (dict "identifier" (printf "https://doi.org/%s" .) "url" (printf "https://doi.org/%s" .) "sameAs" (printf "https://doi.org/%s" .)) }}{{ end -}}
       {{- $items = $items | append $a -}}
