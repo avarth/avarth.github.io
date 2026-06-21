@@ -58,4 +58,28 @@
     }, { rootMargin: "0px 0px -8% 0px", threshold: 0.05 });
     document.querySelectorAll(".reveal").forEach(function (el) { io.observe(el); });
   }
+
+  /* ---- Active-section mark (drives the red square in the nav) ------------- */
+  var spyNav = document.getElementById("nav-primary");
+  if (spyNav && "IntersectionObserver" in window) {
+    var spyMap = {};
+    spyNav.querySelectorAll('a[href*="#"]').forEach(function (a) {
+      var id = a.getAttribute("href").split("#")[1];
+      if (id && document.getElementById(id)) spyMap[id] = a;
+    });
+    var spyIds = Object.keys(spyMap);
+    if (spyIds.length) {
+      var spy = new IntersectionObserver(function (entries) {
+        entries.forEach(function (en) {
+          if (!en.isIntersecting) return;
+          var cur = en.target.id;
+          spyIds.forEach(function (id) {
+            if (id === cur) spyMap[id].setAttribute("aria-current", "true");
+            else spyMap[id].removeAttribute("aria-current");
+          });
+        });
+      }, { rootMargin: "-45% 0px -50% 0px", threshold: 0 });
+      spyIds.forEach(function (id) { spy.observe(document.getElementById(id)); });
+    }
+  }
 }());
