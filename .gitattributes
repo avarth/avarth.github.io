@@ -1,0 +1,12 @@
+# Normalise line endings: store text as LF (Linux CI builds the site).
+* text=auto eol=lf
+
+# Treat assets as binary (never normalise/diff).
+*.woff2 binary
+*.woff  binary
+*.ttf   binary
+*.png   binary
+*.jpg   binary
+*.jpeg  binary
+*.ico   binary
+*.webp  binary
