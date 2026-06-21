@@ -41,16 +41,16 @@
 
 /* ---- Tokens : light (default) -------------------------------------------- */
 :root {
-  --bg:      #ffffff;
-  --bg-2:    #f3f3f1;   /* panels, placeholders */
-  --bg-3:    #ebebe8;
-  --ink:     #111111;
-  --ink-2:   #585858;   /* secondary text  (AA) */
-  --ink-3:   #6b6b6b;   /* meta text       (AA) */
+  --bg:      #f7f4ed;   /* warm paper */
+  --bg-2:    #efe9df;   /* panels, placeholders */
+  --bg-3:    #e7e1d4;
+  --ink:     #17130f;   /* warm near-black */
+  --ink-2:   #5c564d;   /* secondary text  (AA on warm paper) */
+  --ink-3:   #6f685d;   /* meta text       (AA on warm paper) */
   --red:     #e0231c;   /* accent: marks, rules, hover */
   --red-ink: #c81e16;   /* text-safe red   (AA) */
-  --line:    #e6e4e0;
-  --line-2:  #cfccc6;
+  --line:    #e7e0d4;
+  --line-2:  #d3ccbd;
   --sel:     rgba(224, 35, 28, 0.16);
 
   --font: "Plex", system-ui, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
@@ -230,7 +230,8 @@ h1, h2, h3, h4 { font-weight: 600; line-height: 1.06; letter-spacing: -0.018em; 
 .hero-contact a:hover { color: var(--red-ink); }
 
 .portrait { position: relative; }
-.portrait img { width: 100%; height: auto; aspect-ratio: 928 / 1120; object-fit: cover; filter: grayscale(1); background: var(--bg-2); }
+.portrait img { width: 100%; height: auto; aspect-ratio: 928 / 1120; object-fit: cover; filter: url(#duotone-light); background: var(--bg-2); border: 1px solid var(--line-2); }
+:root[data-theme="dark"] .portrait img { filter: url(#duotone-dark); }
 @media (max-width: 56rem) { .hero-aside { max-width: 22rem; } }
 
 /* ---- Generic media placeholder (Swiss: flat grey block + caption) -------- */

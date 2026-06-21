@@ -49,7 +49,7 @@ uthStaffUrl  = ""   # institutional staff page (prd.uth.gr) — add when publish
 
 # --- Branding / meta -------------------------------------------------------
 ogImage         = "img/og.png"
-themeColorLight = "#ffffff"
+themeColorLight = "#f7f4ed"
 themeColorDark  = "#0e0e0d"
 
 # --- Bibliometrics (refresh before tenure milestones) ----------------------
