@@ -371,7 +371,11 @@ h1, h2, h3, h4 { font-weight: 600; line-height: 1.06; letter-spacing: -0.018em; 
    correctly in both light and dark themes). */
 .affil { grid-column: 1 / -1; margin-top: 1.5rem; padding-top: 1.5rem; border-top: 1px solid var(--line); display: flex; align-items: center; gap: 1.75rem; flex-wrap: wrap; }
 .affil-label { color: var(--ink-3); font-size: 0.78rem; }
-.affil img { height: 96px; width: auto; background: #fff; padding: 10px 14px; }
+.affil img { height: 96px; width: auto; padding: 10px 14px; }
+/* The institutional logos are colour marks made for a light ground. In light they
+   sit straight on the paper; in dark they get a soft warm plate so the dark grey
+   lettering keeps reading (no stark white box). */
+:root[data-theme="dark"] .affil img { background: #f4f1ea; border-radius: 4px; }
 @media (max-width: 34rem) { .affil img { height: 64px; } }
 
 /* ---- Utilities ---------------------------------------------------------- */
