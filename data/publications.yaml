@@ -228,6 +228,30 @@
 # ----------------------------------------------------------------------------
 # International conference papers
 # ----------------------------------------------------------------------------
+- key: IC10
+  type: conference
+  year: 2026
+  authors: "Angelopoulos, Th. & Vartholomaios, A."
+  title: "Exploring the Potential Integration of Urban Building Energy Models (UBEM) into Urban Planning in Greece"
+  venue: "Changing Cities VII International Conference, Spetses"
+  status: forthcoming
+
+- key: IC11
+  type: conference
+  year: 2026
+  authors: "Vartholomaios, A."
+  title: "Urban typologies in the age of AI: towards the interpretable city"
+  venue: "Changing Cities VII International Conference, Spetses"
+  status: forthcoming
+
+- key: IC12
+  type: conference
+  year: 2026
+  authors: "Perperidou, D. G., Vartholomaios, A. & Pantazis, D. N."
+  title: "Geoinformatics and Land Administration for Cultural Heritage Preservation"
+  venue: "Changing Cities VII International Conference, Spetses"
+  status: forthcoming
+
 - key: IC1
   type: conference
   year: 2023
