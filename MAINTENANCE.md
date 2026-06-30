@@ -22,6 +22,7 @@
 | Σπουδές | `data/education.yaml` |
 | Εμπειρία / θέσεις | `data/experience.yaml` |
 | Διακρίσεις | `data/awards.yaml` |
+| Θεσμικό έργο / διοικητικοί ρόλοι | `data/service.yaml` |
 | Επαγγελματικές ιδιότητες | `data/memberships.yaml` |
 | Λογισμικό / έργα (+ εικόνες) | `data/tools.yaml` |
 | Bio αρχικής + punchline (motto) | `content/_index.en.md` & `content/_index.el.md` |
@@ -35,7 +36,7 @@
 **Single page.** Όλο το περιεχόμενο είναι σε ΜΙΑ σελίδα (δεν υπάρχουν
 υποσελίδες). Η σειρά ενοτήτων ορίζεται στο `layouts/index.html` (αλλάζεις τη
 σειρά των partials και το `idx`). Οι ενότητες τύπου CV (teaching / experience /
-education / awards / memberships) έχουν την ίδια δομή πεδίων: `when_en/when_el`,
+education / awards / service / memberships) έχουν την ίδια δομή πεδίων: `when_en/when_el`,
 `what_en/what_el`, `where_en/where_el`, `note_en/note_el` (τα δύο τελευταία
 προαιρετικά).
 
