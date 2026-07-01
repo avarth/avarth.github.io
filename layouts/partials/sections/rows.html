@@ -1,18 +1,22 @@
-{{- /* Generic CV-style rows section. Params: lang, data, id, idx, title, lead? */ -}}
+{{- /* Generic CV-style rows section. Params: lang, data, id, idx, title, lead?, cols?, collapseAfter? */ -}}
 {{- $lang := .lang -}}
+{{- $cols := .cols | default 0 -}}
+{{- $ca := .collapseAfter | default 0 -}}
+{{- $total := len .data -}}
+{{- $collapsible := and (gt $ca 0) (gt $total $ca) -}}
 <section class="section" id="{{ .id }}" aria-labelledby="{{ .id }}-h">
   <div class="container">
     <div class="section-head">
       <h2 class="section-title" id="{{ .id }}-h"><span class="idx num" aria-hidden="true">{{ .idx }}</span> {{ .title }}</h2>
       {{ with .lead }}<p class="section-lead">{{ . }}</p>{{ end }}
     </div>
-    <div class="rows reveal">
-      {{ range .data }}
-        {{ $when := cond (eq $lang "el") .when_el .when_en }}
-        {{ $what := cond (eq $lang "el") .what_el .what_en }}
-        {{ $where := cond (eq $lang "el") .where_el .where_en }}
-        {{ $note := cond (eq $lang "el") .note_el .note_en }}
-        <div class="row">
+    <div class="rows reveal{{ if eq $cols 2 }} cols2{{ end }}{{ if $collapsible }} is-collapsed{{ end }}" id="{{ .id }}-rows">
+      {{ range $i, $e := .data }}
+        {{ $when := cond (eq $lang "el") $e.when_el $e.when_en }}
+        {{ $what := cond (eq $lang "el") $e.what_el $e.what_en }}
+        {{ $where := cond (eq $lang "el") $e.where_el $e.where_en }}
+        {{ $note := cond (eq $lang "el") $e.note_el $e.note_en }}
+        <div class="row{{ if and $collapsible (ge $i $ca) }} row--extra{{ end }}">
           <div class="row-when num">{{ $when }}</div>
           <div>
             <div class="row-what">{{ $what }}</div>
@@ -22,5 +26,11 @@
         </div>
       {{ end }}
     </div>
+    {{ if $collapsible }}
+      <button class="more btn-more" type="button" aria-expanded="false" data-more="{{ .id }}-rows">
+        <span class="more-show">{{ i18n "show_all" }} ({{ sub $total $ca }})</span>
+        <span class="more-hide">{{ i18n "show_less" }}</span>
+      </button>
+    {{ end }}
   </div>
 </section>

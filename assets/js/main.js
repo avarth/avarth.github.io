@@ -59,6 +59,16 @@
     document.querySelectorAll(".reveal").forEach(function (el) { io.observe(el); });
   }
 
+  /* ---- Progressive disclosure ("show all" toggles) ---------------------- */
+  document.querySelectorAll("[data-more]").forEach(function (btn) {
+    var wrap = document.getElementById(btn.getAttribute("data-more"));
+    if (!wrap) return;
+    btn.addEventListener("click", function () {
+      var collapsed = wrap.classList.toggle("is-collapsed");
+      btn.setAttribute("aria-expanded", collapsed ? "false" : "true");
+    });
+  });
+
   /* ---- Active-section mark (drives the red square in the nav) ------------- */
   var spyNav = document.getElementById("nav-primary");
   if (spyNav && "IntersectionObserver" in window) {

@@ -7,13 +7,16 @@
       <h2 class="section-title" id="publications-h"><span class="idx num" aria-hidden="true">02</span> {{ i18n "section_publications" }}</h2>
     </div>
 
-    <div class="metrics">
-      <div class="metric"><div class="metric-n num">{{ $b.journalArticles }}</div><div class="metric-l">{{ i18n "group_journals" }}</div></div>
-      <div class="metric"><div class="metric-n num">{{ $b.scholarCitations }}</div><div class="metric-l"><a class="link" href="https://scholar.google.com/citations?user={{ .Site.Params.scholar }}" rel="me noopener">{{ i18n "citations" }} · {{ i18n "on_scholar" }}</a></div></div>
-      <div class="metric"><div class="metric-n num">{{ $b.scholarH }}</div><div class="metric-l">{{ i18n "h_index" }}</div></div>
-      <div class="metric"><div class="metric-n num">{{ $b.scopusCitations }}</div><div class="metric-l">{{ i18n "citations" }} · {{ i18n "on_scopus" }}</div></div>
+    <div class="metrics-row">
+      <div class="metrics">
+        <div class="metric"><div class="metric-n num">{{ $b.journalArticles }}</div><div class="metric-l">{{ i18n "group_journals" }}</div></div>
+        <div class="metric"><div class="metric-n num">{{ $b.scholarCitations }}</div><div class="metric-l"><a class="link" href="https://scholar.google.com/citations?user={{ .Site.Params.scholar }}" rel="me noopener">{{ i18n "citations" }} · {{ i18n "on_scholar" }}</a></div></div>
+        <div class="metric"><div class="metric-n num">{{ $b.scholarH }}</div><div class="metric-l">{{ i18n "h_index" }}</div></div>
+        <div class="metric"><div class="metric-n num">{{ $b.scopusCitations }}</div><div class="metric-l"><a class="link" href="https://www.scopus.com/authid/detail.uri?authorId={{ .Site.Params.scopus }}" rel="me noopener">{{ i18n "citations" }} · {{ i18n "on_scopus" }}</a></div></div>
+        <div class="metric"><div class="metric-n num">{{ $b.s2Citations }}</div><div class="metric-l"><a class="link" href="https://www.semanticscholar.org/author/{{ replace .Site.Params.authorNameLatin " " "-" }}/{{ .Site.Params.semanticScholar }}" rel="me noopener">{{ i18n "citations" }} · {{ i18n "on_s2" }}</a></div></div>
+      </div>
+      <p class="metrics-note">{{ i18n "metrics_note" }} ({{ i18n "metrics_asof" }} {{ $asof }})</p>
     </div>
-    <p class="metrics-note">{{ i18n "metrics_note" }} ({{ i18n "metrics_asof" }} {{ $asof }})</p>
 
     {{- $groups := slice
         (slice "journal" "group_journals")
@@ -24,19 +27,28 @@
         (slice "under_review" "group_under_review")
         (slice "other" "group_other") -}}
     {{- $n := 0 -}}
+    {{- $ca := 5 -}}
     {{- range $groups -}}
       {{- $type := index . 0 -}}{{- $key := index . 1 -}}
       {{- $items := sort (where hugo.Data.publications "type" $type) "year" "desc" -}}
       {{- with $items -}}
         {{- $n = add $n 1 -}}
+        {{- $count := len $items -}}
+        {{- $collapsible := gt $count $ca -}}
         <div class="pubgroup" aria-labelledby="g-{{ $type }}">
           <div class="pubgroup-head">
             <h3 class="pubgroup-title" id="g-{{ $type }}">{{ i18n $key }}</h3>
-            <span class="pubgroup-count num">{{ len $items }}</span>
+            <span class="pubgroup-count num">{{ $count }}</span>
           </div>
-          <div class="pub-list">
-            {{- range $items }}{{ partial "pub-item.html" (dict "p" . "lang" $lang) }}{{ end -}}
+          <div class="pub-list{{ if $collapsible }} is-collapsed{{ end }}" id="pub-{{ $type }}">
+            {{- range $i, $p := $items }}{{ partial "pub-item.html" (dict "p" $p "lang" $lang "extra" (and $collapsible (ge $i $ca))) }}{{ end -}}
           </div>
+          {{ if $collapsible }}
+            <button class="more btn-more" type="button" aria-expanded="false" data-more="pub-{{ $type }}">
+              <span class="more-show">{{ i18n "show_all" }} ({{ sub $count $ca }})</span>
+              <span class="more-hide">{{ i18n "show_less" }}</span>
+            </button>
+          {{ end }}
         </div>
       {{- end -}}
     {{- end -}}

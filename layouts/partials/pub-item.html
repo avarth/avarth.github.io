@@ -15,7 +15,7 @@
 {{- $url := "" -}}
 {{- with $p.doi }}{{ $url = printf "https://doi.org/%s" . }}{{ end -}}
 {{- if and (not $url) $p.url }}{{ $url = $p.url }}{{ end -}}
-<article class="pub">
+<article class="pub{{ if .extra }} pub--extra{{ end }}">
   <div class="pub-year num">{{ $p.year }}</div>
   <div class="pub-main">
     <h4 class="pub-title"{{ if $foreign }} lang="{{ $displayLang }}"{{ end }}>

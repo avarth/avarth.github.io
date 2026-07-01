@@ -44,6 +44,8 @@ authored_textbook = "Διδακτικό εγχειρίδιο"
 
 # Tools / publications
 repository    = "Αποθετήριο"
+show_all      = "Εμφάνιση όλων"
+show_less     = "Λιγότερα"
 doi           = "DOI"
 live_demo     = "Διαδραστικός άτλας"
 download_cv   = "Εκτύπωση / αποθήκευση ως PDF"
@@ -69,6 +71,7 @@ citations    = "αναφορές"
 h_index      = "h-index"
 on_scholar   = "Google Scholar"
 on_scopus    = "Scopus"
+on_s2        = "Semantic Scholar"
 metrics_asof = "τον"
 metrics_note = "Οι αναφορές δηλώνονται από τον συγγραφέα και ανανεώνονται περιοδικά· δείτε τα συνδεδεμένα προφίλ για ζωντανά στοιχεία."
 

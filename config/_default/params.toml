@@ -42,6 +42,8 @@ email = "avartholomaios@uth.gr"
 # --- Profiles (single source for links + JSON-LD sameAs) -------------------
 orcid        = "0000-0001-6177-1130"
 scholar      = "o4MWWKoAAAAJ"
+scopus       = "56644979400"
+semanticScholar = "97564727"
 github       = "avarth"
 linkedin     = "aris-vartholomaios"
 researchgate = "Aristotelis-Vartholomaios-2"
@@ -59,5 +61,5 @@ themeColorDark  = "#0e0e0d"
   scholarCitations = 524
   scholarH         = 7
   scopusCitations  = 306
-  scopusH          = 6
+  s2Citations      = 313
   journalArticles  = 11

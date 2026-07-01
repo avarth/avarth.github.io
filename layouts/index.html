@@ -3,11 +3,11 @@
   {{ partial "sections/research.html" . }}
   {{ partial "sections/work.html" . }}
   {{ partial "sections/teaching.html" . }}
-  {{ partial "sections/rows.html" (dict "lang" .Site.Language.Lang "data" hugo.Data.talks       "id" "talks"       "idx" "04" "title" (i18n "section_talks")) }}
+  {{ partial "sections/rows.html" (dict "lang" .Site.Language.Lang "data" hugo.Data.talks       "id" "talks"       "idx" "04" "title" (i18n "section_talks") "collapseAfter" 5) }}
   {{ partial "sections/rows.html" (dict "lang" .Site.Language.Lang "data" hugo.Data.experience "id" "experience"  "idx" "05" "title" (i18n "section_experience")) }}
-  {{ partial "sections/rows.html" (dict "lang" .Site.Language.Lang "data" hugo.Data.education  "id" "education"   "idx" "06" "title" (i18n "section_education")) }}
-  {{ partial "sections/rows.html" (dict "lang" .Site.Language.Lang "data" hugo.Data.awards      "id" "recognition" "idx" "07" "title" (i18n "section_recognition")) }}
-  {{ partial "sections/rows.html" (dict "lang" .Site.Language.Lang "data" hugo.Data.service     "id" "service"     "idx" "08" "title" (i18n "section_service")) }}
-  {{ partial "sections/rows.html" (dict "lang" .Site.Language.Lang "data" hugo.Data.memberships "id" "memberships" "idx" "09" "title" (i18n "section_memberships")) }}
+  {{ partial "sections/rows.html" (dict "lang" .Site.Language.Lang "data" hugo.Data.education  "id" "education"   "idx" "06" "title" (i18n "section_education") "cols" 2) }}
+  {{ partial "sections/rows.html" (dict "lang" .Site.Language.Lang "data" hugo.Data.awards      "id" "recognition" "idx" "07" "title" (i18n "section_recognition") "cols" 2) }}
+  {{ partial "sections/rows.html" (dict "lang" .Site.Language.Lang "data" hugo.Data.service     "id" "service"     "idx" "08" "title" (i18n "section_service") "cols" 2) }}
+  {{ partial "sections/rows.html" (dict "lang" .Site.Language.Lang "data" hugo.Data.memberships "id" "memberships" "idx" "09" "title" (i18n "section_memberships") "cols" 2) }}
   {{ partial "sections/tools.html" . }}
 {{ end }}

@@ -44,6 +44,8 @@ authored_textbook = "Teaching handbook"
 
 # Tools / publications
 repository    = "Repository"
+show_all      = "Show all"
+show_less     = "Show less"
 doi           = "DOI"
 live_demo     = "Live atlas"
 download_cv   = "Print / save as PDF"
@@ -69,6 +71,7 @@ citations    = "citations"
 h_index      = "h-index"
 on_scholar   = "Google Scholar"
 on_scopus    = "Scopus"
+on_s2        = "Semantic Scholar"
 metrics_asof = "as of"
 metrics_note = "Citation counts are self-reported and refreshed periodically; see the linked profiles for live figures."
 

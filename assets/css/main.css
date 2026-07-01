@@ -289,6 +289,33 @@ h1, h2, h3, h4 { font-weight: 600; line-height: 1.06; letter-spacing: -0.018em; 
 .row-note { color: var(--ink-3); font-size: 0.88rem; margin-top: 0.25rem; }
 @media (max-width: 34rem) { .row { grid-template-columns: 1fr; gap: 0.3rem; } }
 
+/* Two-column CV rows on wide screens: keep rows tight vertically (they already
+   have padding + dividers), just split into two columns. */
+.rows.cols2 { row-gap: 0; column-gap: clamp(2rem, 5vw, 4rem); }
+
+/* Progressive disclosure: extra rows / publications stay hidden until the
+   "show all" button is pressed. Printing forces everything open (see @media
+   print), so the PDF/CV is always complete. */
+.is-collapsed .row--extra,
+.is-collapsed .pub--extra { display: none; }
+.btn-more {
+  font: inherit; font-size: 0.85rem; font-weight: 500; letter-spacing: 0.01em;
+  color: var(--red-ink); background: none; border: 1px solid var(--red);
+  padding: 0.5rem 1rem; cursor: pointer;
+  transition: color .15s ease, border-color .15s ease, background-color .15s ease;
+}
+.btn-more:hover, .btn-more:focus-visible { color: #fff; background: var(--red); border-color: var(--red); }
+.btn-more .more-show::after { content: " ↓"; }
+.btn-more .more-hide::after { content: " ↑"; }
+.btn-more .more-hide { display: none; }
+.btn-more[aria-expanded="true"] .more-show { display: none; }
+.btn-more[aria-expanded="true"] .more-hide { display: inline; }
+/* Without JS the toggle can't work: reveal everything and hide the buttons.
+   (The inline head script swaps html.no-js -> html.js before paint.) */
+html.no-js .row--extra,
+html.no-js .pub--extra { display: grid !important; }
+html.no-js .btn-more { display: none; }
+
 /* ---- Software (de-emphasized) ------------------------------------------- */
 .software { display: grid; grid-template-columns: repeat(2, 1fr); gap: clamp(1.5rem, 4vw, 3rem); }
 @media (max-width: 48rem) { .software { grid-template-columns: 1fr; } }
@@ -315,12 +342,16 @@ h1, h2, h3, h4 { font-weight: 600; line-height: 1.06; letter-spacing: -0.018em; 
 .hero-cta { margin-top: 1.75rem; }
 
 /* ---- Metrics (publications page) ---------------------------------------- */
-.metrics { display: flex; flex-wrap: wrap; gap: 2.5rem 3.5rem; margin-bottom: 2.5rem; padding-bottom: 2.5rem; border-bottom: 1px solid var(--line); }
+.metrics-row { display: flex; flex-wrap: wrap; align-items: flex-end; gap: 1rem 2.5rem; margin-bottom: 2.5rem; padding-bottom: 2.5rem; border-bottom: 1px solid var(--line); }
+.metrics { flex: 1 1 auto; min-width: 0; display: flex; flex-wrap: wrap; gap: 1.5rem 2.25rem; }
+/* On wider screens all citation metrics stay on a single row; the note fills
+   the space to their right (and drops below only when there is no room). */
+@media (min-width: 60rem) { .metrics { flex-wrap: nowrap; } }
 .metric-n { font-size: 2.4rem; font-weight: 600; letter-spacing: -0.02em; line-height: 1; }
 .metric-l { color: var(--ink-3); font-size: 0.82rem; margin-top: 0.5rem; }
 .metric a { color: inherit; }
 .metric a:hover { color: var(--red-ink); }
-.metrics-note { color: var(--ink-3); font-size: 0.85rem; margin-bottom: 3rem; max-width: 60ch; }
+.metrics-note { color: var(--ink-3); font-size: 0.85rem; margin: 0; max-width: 32ch; flex: 0 1 28ch; }
 
 .pubgroup { margin-bottom: 3rem; }
 .pubgroup-head { display: flex; align-items: baseline; gap: 0.8rem; margin-bottom: 0.4rem; padding-bottom: 0.5rem; border-bottom: 2px solid var(--ink); }
@@ -403,6 +434,8 @@ html.anim .reveal.is-in, html.anim-done .reveal { opacity: 1; transform: none; }
   .section-title { font-size: 13pt; page-break-after: avoid; }
   .section-lead { font-size: 9.5pt; }
   .pub, .row, .interest, .soft { page-break-inside: avoid; }
+  /* Collapsed lists always print in full. */
+  .is-collapsed .row--extra, .is-collapsed .pub--extra { display: grid !important; }
   .cols2, .software { grid-template-columns: 1fr 1fr; gap: 0.6rem 1.5rem; }
   .soft-fig { display: none; }
   a { color: #000; }
