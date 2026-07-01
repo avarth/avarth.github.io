@@ -19,6 +19,7 @@
 | Δημοσιεύσεις (add/edit paper) | `data/publications.yaml` |
 | Ερευνητικά ενδιαφέροντα | `data/threads.yaml` |
 | Διδασκαλία | `data/teaching.yaml` |
+| Ομιλίες & διαλέξεις | `data/talks.yaml` |
 | Σπουδές | `data/education.yaml` |
 | Εμπειρία / θέσεις | `data/experience.yaml` |
 | Διακρίσεις | `data/awards.yaml` |
@@ -36,7 +37,7 @@
 **Single page.** Όλο το περιεχόμενο είναι σε ΜΙΑ σελίδα (δεν υπάρχουν
 υποσελίδες). Η σειρά ενοτήτων ορίζεται στο `layouts/index.html` (αλλάζεις τη
 σειρά των partials και το `idx`). Οι ενότητες τύπου CV (teaching / experience /
-education / awards / service / memberships) έχουν την ίδια δομή πεδίων: `when_en/when_el`,
+talks / education / awards / service / memberships) έχουν την ίδια δομή πεδίων: `when_en/when_el`,
 `what_en/what_el`, `where_en/where_el`, `note_en/note_el` (τα δύο τελευταία
 προαιρετικά).
 

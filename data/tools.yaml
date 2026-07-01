@@ -39,10 +39,10 @@
   num: "02"
   image: "img/atlas.jpg"   # empty = placeholder
   title: "Greek Toponymic Atlas"
-  title_el: "Ψηφιακός Άτλας Ελληνικής Τοπωνυμίας"
+  title_el: "Ψηφιακός Άτλας Ελληνικών Τοπωνυμίων"
   acronym: ""
-  tagline_en: "An interactive atlas of Greek placenames"
-  tagline_el: "Διαδραστικός άτλας ελληνικών τοπωνυμίων"
+  tagline_en: "Nationwide placename mapping from Hellenic Military Geographical Service (ΓΥΣ) data"
+  tagline_el: "Πανελλαδική χαρτογράφηση τοπωνυμίων από δεδομένα της ΓΥΣ"
   body_en: >-
     Built from Hellenic Military Geographical Service (ΓΥΣ) data through a
     three-stage pipeline (morphological rules, LLM disambiguation and manual

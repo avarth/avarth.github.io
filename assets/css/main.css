@@ -167,7 +167,7 @@ h1, h2, h3, h4 { font-weight: 600; line-height: 1.06; letter-spacing: -0.018em; 
 .brand .dot { width: 8px; height: 8px; background: var(--red); display: inline-block; flex: none; }
 .brand-name { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .nav { display: flex; align-items: center; gap: clamp(0.7rem, 1.5vw, 1.3rem); }
-.nav a { font-size: 0.8rem; color: var(--ink-2); padding-block: 0.35rem; position: relative; transition: color .15s ease; }
+.nav a { font-size: 0.8rem; color: var(--ink-2); padding-block: 0.35rem; position: relative; transition: color .15s ease; white-space: nowrap; }
 .nav a::after { content: ""; position: absolute; left: 0; right: 100%; bottom: -2px; height: 2px; background: var(--red); transition: right .2s ease; }
 .nav a:hover { color: var(--ink); }
 .nav a:hover::after { right: 0; }
@@ -192,9 +192,9 @@ h1, h2, h3, h4 { font-weight: 600; line-height: 1.06; letter-spacing: -0.018em; 
 :root[data-theme="dark"] .theme-toggle .icon-sun { display: none; }
 :root[data-theme="dark"] .theme-toggle .icon-moon { display: inline; }
 .nav-toggle { display: none; }
-/* All eight sections show on the desktop bar; below the breakpoint the whole set
-   collapses into the burger menu (the bar can't hold eight items much narrower). */
-@media (max-width: 68rem) {
+/* All ten sections show on the desktop bar; below the breakpoint the whole set
+   collapses into the burger menu (the bar can't hold ten items much narrower). */
+@media (max-width: 76rem) {
   .nav.primary { position: fixed; inset: 4rem 0 auto 0; flex-direction: column; align-items: stretch;
     background: var(--bg); border-bottom: 1px solid var(--line); padding: 0.25rem var(--gut) 1.25rem;
     transform: translateY(-130%); transition: transform .25s ease; gap: 0; }
