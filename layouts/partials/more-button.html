@@ -1,0 +1,9 @@
+{{- /* Progressive-disclosure toggle button. Params:
+         target — id of the collapsible container (its .is-collapsed is toggled by main.js)
+         count  — the list's total number of items (shown in parentheses).
+       Shared by sections/rows.html and sections/work.html so the markup contract
+       (classes, data-more, .more-show/.more-hide spans) stays in one place. */ -}}
+<button class="more btn-more" type="button" aria-expanded="false" data-more="{{ .target }}">
+  <span class="more-show">{{ i18n "show_all" }} ({{ .count }})</span>
+  <span class="more-hide">{{ i18n "show_less" }}</span>
+</button>

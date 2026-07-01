@@ -7,20 +7,12 @@
 # --- Identity ---------------------------------------------------------------
 authorName    = "Aristotelis Vartholomaios"
 authorNameEl  = "Αριστοτέλης Βαρθολομαίος"
-authorNameLatin = "Aristotelis Vartholomaios"     # for JSON-LD / alternateName
+authorNameLatin = "Aristotelis Vartholomaios"     # Semantic Scholar author-URL slug (see partials/s2-author-url.html)
 authorDisplayEn = "Aris Vartholomaios"            # display name (hero, header)
 authorDisplayEl = "Άρης Βαρθολομαίος"
 
 jobTitleEn    = "Assistant Professor of Urban Planning"
 jobTitleEl    = "Επίκουρος Καθηγητής Πολεοδομίας"
-disciplineEn  = "Urban Planning"
-disciplineEl  = "Πολεοδομία"
-
-# About-section facts (the "Software" fact is generated from data/tools.yaml)
-aboutFocusEn     = "Computational urban planning"
-aboutFocusEl     = "Υπολογιστική πολεοδομία"
-aboutEducationEn = "MEng · MA Oxford Brookes · PhD AUTh"
-aboutEducationEl = "MEng · MA Oxford Brookes · PhD ΑΠΘ"
 
 affiliationEn      = "Department of Planning and Regional Development, School of Engineering, University of Thessaly"
 affiliationEl      = "Τμήμα Μηχανικών Χωροταξίας, Πολεοδομίας και Περιφερειακής Ανάπτυξης, Πολυτεχνική Σχολή, Πανεπιστήμιο Θεσσαλίας"
@@ -28,11 +20,9 @@ affiliationShortEn = "University of Thessaly · DPRD"
 affiliationShortEl = "Πανεπιστήμιο Θεσσαλίας · ΤΜΧΠΠΑ"
 universityUrl      = "https://www.uth.gr/"
 
-# --- Location (cadastral coordinate locator in the hero) --------------------
+# --- Location ---------------------------------------------------------------
 localityEn = "Volos, Greece"
 localityEl = "Βόλος, Ελλάδα"
-latitude   = "39.36"
-longitude  = "22.94"
 officeEn   = "Office Γ24, 2nd floor, Pedion Areos, 383 34 Volos"
 officeEl   = "Γραφείο Γ24, 2ος όροφος, Πεδίον Άρεως, 383 34 Βόλος"
 
@@ -47,12 +37,11 @@ semanticScholar = "97564727"
 github       = "avarth"
 linkedin     = "aris-vartholomaios"
 researchgate = "Aristotelis-Vartholomaios-2"
-uthStaffUrl  = ""   # institutional staff page (prd.uth.gr) — add when published
 
 # --- Branding / meta -------------------------------------------------------
 ogImage         = "img/og.png"
-themeColorLight = "#f7f4ed"
-themeColorDark  = "#0e0e0d"
+themeColorLight = "#f7f4ed"   # browser UI colour, light theme
+themeColorDark  = "#1c1c1a"   # browser UI colour, dark theme (matches CSS dark --bg)
 
 # --- Bibliometrics (refresh before tenure milestones) ----------------------
 [bibliometrics]

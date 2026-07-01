@@ -20,7 +20,6 @@ lang_other      = "English"
 lang_other_full = "Read in English"
 
 # Footer / contact
-hero_coordinates = "Συντεταγμένες"
 footer_role   = "Επίκουρος Καθηγητής Πολεοδομίας"
 footer_built  = "Στατικός ιστότοπος, χτισμένος με Hugo. Χωρίς trackers, χωρίς cookies."
 footer_source = "Πηγαίος κώδικας στο GitHub"

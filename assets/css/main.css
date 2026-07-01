@@ -364,9 +364,6 @@ html.no-js .btn-more { display: none; }
 /* ---- Page head + CV ----------------------------------------------------- */
 .page-head { padding-block: clamp(2.5rem, 6vw, 4.5rem) clamp(1.5rem, 3vw, 2.5rem); border-bottom: 1px solid var(--line); }
 .page-title { font-size: clamp(2rem, 1.4rem + 3vw, 3.4rem); letter-spacing: -0.025em; }
-.page-sub { color: var(--ink-2); margin-top: 0.75rem; }
-.cv { padding-block: clamp(2.5rem, 5vw, 4rem); }
-.cv-actions { display: flex; gap: 0.75rem; flex-wrap: wrap; margin-bottom: 2.5rem; }
 .cv-body { max-width: 72ch; }
 .cv-body h2 { font-size: clamp(1.2rem, 1rem + 1vw, 1.6rem); margin: 2.5rem 0 0.6rem; padding-top: 1.4rem; border-top: 1px solid var(--line); }
 .cv-body h2:first-child { margin-top: 0; padding-top: 0; border-top: 0; }
@@ -432,7 +429,7 @@ html.anim .reveal.is-in, html.anim-done .reveal { opacity: 1; transform: none; }
   .hero { padding: 0 0 0.5rem; }
   .hero-grid { display: block; }
   .hero-name { font-size: 22pt; }
-  .hero-kicker, .hero-role, .hero-punch, .hero-bio { font-size: 10pt; max-width: none; margin-top: 0.3rem; }
+  .hero-role, .hero-punch, .hero-bio { font-size: 10pt; max-width: none; margin-top: 0.3rem; }
   .hero-contact { gap: 0.3rem 1rem; margin-top: 0.5rem; }
   .section-title { font-size: 13pt; page-break-after: avoid; }
   .section-lead { font-size: 9.5pt; }

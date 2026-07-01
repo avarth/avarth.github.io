@@ -26,11 +26,6 @@
         </div>
       {{ end }}
     </div>
-    {{ if $collapsible }}
-      <button class="more btn-more" type="button" aria-expanded="false" data-more="{{ .id }}-rows">
-        <span class="more-show">{{ i18n "show_all" }} ({{ $total }})</span>
-        <span class="more-hide">{{ i18n "show_less" }}</span>
-      </button>
-    {{ end }}
+    {{ if $collapsible }}{{ partial "more-button.html" (dict "target" (printf "%s-rows" .id) "count" $total) }}{{ end }}
   </div>
 </section>

@@ -1,0 +1,4 @@
+{{- /* Returns the Semantic Scholar author URL. Pass the params object (Site.Params);
+       reads .authorNameLatin (slug) and .semanticScholar (id). Single source so the
+       slug scheme lives in one place (used by hero, work metrics, and seo sameAs). */ -}}
+{{- return printf "https://www.semanticscholar.org/author/%s/%s" (replace .authorNameLatin " " "-") .semanticScholar -}}

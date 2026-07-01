@@ -14,7 +14,7 @@
         <a class="link" href="mailto:{{ $p.email }}">{{ $p.email }}</a>
         <a class="link" href="https://orcid.org/{{ $p.orcid }}" rel="me noopener">ORCID</a>
         <a class="link" href="https://scholar.google.com/citations?user={{ $p.scholar }}" rel="me noopener">Google Scholar</a>
-        <a class="link" href="https://www.semanticscholar.org/author/{{ replace $p.authorNameLatin " " "-" }}/{{ $p.semanticScholar }}" rel="me noopener">Semantic Scholar</a>
+        <a class="link" href="{{ partial "s2-author-url.html" $p }}" rel="me noopener">Semantic Scholar</a>
         <a class="link" href="https://github.com/{{ $p.github }}" rel="me noopener">GitHub</a>
       </nav>
       <div class="hero-cta"><button class="btn" type="button" data-print>{{ i18n "download_cv" }}</button></div>

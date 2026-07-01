@@ -20,7 +20,6 @@ lang_other      = "Ελληνικά"
 lang_other_full = "Read in Greek"
 
 # Footer / contact
-hero_coordinates = "Coordinates"
 footer_role   = "Assistant Professor of Urban Planning"
 footer_built  = "Static site, built with Hugo. No trackers, no cookies."
 footer_source = "Source on GitHub"

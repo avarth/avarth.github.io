@@ -18,6 +18,8 @@
       var next = effectiveTheme() === "dark" ? "light" : "dark";
       root.setAttribute("data-theme", next);
       try { localStorage.setItem("theme", next); } catch (e) {}
+      var mc = document.querySelector('meta[name="theme-color"]');
+      if (mc) mc.setAttribute("content", next === "dark" ? mc.getAttribute("data-dark") : mc.getAttribute("data-light"));
       syncPressed();
     });
   }

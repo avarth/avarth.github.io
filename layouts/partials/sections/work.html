@@ -13,7 +13,7 @@
         <div class="metric"><div class="metric-n num">{{ $b.scholarCitations }}</div><div class="metric-l"><a class="link" href="https://scholar.google.com/citations?user={{ .Site.Params.scholar }}" rel="me noopener">{{ i18n "citations" }} · {{ i18n "on_scholar" }}</a></div></div>
         <div class="metric"><div class="metric-n num">{{ $b.scholarH }}</div><div class="metric-l">{{ i18n "h_index" }}</div></div>
         <div class="metric"><div class="metric-n num">{{ $b.scopusCitations }}</div><div class="metric-l"><a class="link" href="https://www.scopus.com/authid/detail.uri?authorId={{ .Site.Params.scopus }}" rel="me noopener">{{ i18n "citations" }} · {{ i18n "on_scopus" }}</a></div></div>
-        <div class="metric"><div class="metric-n num">{{ $b.s2Citations }}</div><div class="metric-l"><a class="link" href="https://www.semanticscholar.org/author/{{ replace .Site.Params.authorNameLatin " " "-" }}/{{ .Site.Params.semanticScholar }}" rel="me noopener">{{ i18n "citations" }} · {{ i18n "on_s2" }}</a></div></div>
+        <div class="metric"><div class="metric-n num">{{ $b.s2Citations }}</div><div class="metric-l"><a class="link" href="{{ partial "s2-author-url.html" .Site.Params }}" rel="me noopener">{{ i18n "citations" }} · {{ i18n "on_s2" }}</a></div></div>
       </div>
       <p class="metrics-note">{{ i18n "metrics_note" }} ({{ i18n "metrics_asof" }} {{ $asof }})</p>
     </div>
@@ -43,12 +43,7 @@
           <div class="pub-list{{ if $collapsible }} is-collapsed{{ end }}" id="pub-{{ $type }}">
             {{- range $i, $p := $items }}{{ partial "pub-item.html" (dict "p" $p "lang" $lang "extra" (and $collapsible (ge $i $ca))) }}{{ end -}}
           </div>
-          {{ if $collapsible }}
-            <button class="more btn-more" type="button" aria-expanded="false" data-more="pub-{{ $type }}">
-              <span class="more-show">{{ i18n "show_all" }} ({{ $count }})</span>
-              <span class="more-hide">{{ i18n "show_less" }}</span>
-            </button>
-          {{ end }}
+          {{ if $collapsible }}{{ partial "more-button.html" (dict "target" (printf "pub-%s" $type) "count" $count) }}{{ end }}
         </div>
       {{- end -}}
     {{- end -}}

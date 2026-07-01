@@ -1,15 +1,13 @@
 # ============================================================================
-# Publications — single source for both the "Selected work" section (home)
-# and the full /publications/ page.
+# Publications — single source for the Publications section, rendered by
+# layouts/partials/sections/work.html (grouped by `type`, newest first).
 #
 # HOW TO ADD A PAPER (no template edits):
 #   1. Copy a block below.
 #   2. Set `type` to one of: journal | greek_journal | conference |
 #      national | book | under_review | other
-#   3. Set `status` to: published | under_review | forthcoming
-#   4. To show it on the home "Selected work" list, add `featured: true`
-#      and a `rank` (lower = higher up).
-#   5. `doi` is the bare DOI (no https://). Use `url` for non-DOI links.
+#   3. Set `status` to: published | under_review | accepted | submitted | forthcoming
+#   4. `doi` is the bare DOI (no https://). Use `url` for non-DOI links.
 #
 # IMPORTANT: never mark an "under_review" paper as published.
 # ============================================================================
@@ -27,8 +25,6 @@
   doi: "10.1007/s43762-025-00206-9"
   impact: "IF 3.5"
   status: published
-  featured: true
-  rank: 1
 
 - key: J2
   type: journal
@@ -40,8 +36,6 @@
   doi: "10.3390/land14102083"
   impact: "IF 3.2"
   status: published
-  featured: true
-  rank: 2
 
 - key: J3
   type: journal
@@ -99,8 +93,6 @@
   impact: "IF 4.0"
   cites: "35"
   status: published
-  featured: true
-  rank: 5
 
 - key: J8
   type: journal
@@ -132,8 +124,6 @@
   impact: "IF 5.1"
   cites: "150"
   status: published
-  featured: true
-  rank: 3
 
 - key: J11
   type: journal
@@ -146,8 +136,6 @@
   impact: "IF 4.6"
   cites: "60"
   status: published
-  featured: true
-  rank: 4
 
 # ----------------------------------------------------------------------------
 # Greek-language journal articles
@@ -186,8 +174,6 @@
   venue_el: "Κάλλιπος+, Υπουργείο Παιδείας"
   doi: "10.57713/kallipos-418"
   status: published
-  featured: true
-  rank: 6
 
 - key: B3
   type: book

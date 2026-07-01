@@ -29,7 +29,7 @@
 {{- end }}
 
 {{- /* Theme colour */ -}}
-<meta name="theme-color" content="{{ $site.Params.themeColorLight }}">
+<meta name="theme-color" content="{{ $site.Params.themeColorLight }}" data-light="{{ $site.Params.themeColorLight }}" data-dark="{{ $site.Params.themeColorDark }}">
 <meta name="color-scheme" content="light">
 
 {{- /* Favicon (cadastral mark) */ -}}
@@ -52,7 +52,7 @@
 
 {{- /* No-flash theme + JS-capability flag (runs before paint) */ -}}
 <script>
-(function(){var d=document.documentElement;try{var t=localStorage.getItem('theme');if(t==='dark'||t==='light'){d.setAttribute('data-theme',t);}}catch(e){}d.className=d.className.replace('no-js','js');try{if(window.matchMedia&&!matchMedia('(prefers-reduced-motion: reduce)').matches){d.classList.add('anim');setTimeout(function(){d.classList.add('anim-done');},1500);}}catch(e){}}());
+(function(){var d=document.documentElement;try{var t=localStorage.getItem('theme');if(t==='dark'||t==='light'){d.setAttribute('data-theme',t);}}catch(e){}var mc=document.querySelector('meta[name=theme-color]');if(mc){mc.setAttribute('content',d.getAttribute('data-theme')==='dark'?mc.getAttribute('data-dark'):mc.getAttribute('data-light'));}d.className=d.className.replace('no-js','js');try{if(window.matchMedia&&!matchMedia('(prefers-reduced-motion: reduce)').matches){d.classList.add('anim');setTimeout(function(){d.classList.add('anim-done');},1500);}}catch(e){}}());
 </script>
 
 {{ partial "seo.html" . }}

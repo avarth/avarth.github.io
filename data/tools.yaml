@@ -1,11 +1,10 @@
 # ============================================================================
 # Open research software shown in the "Tools" section.
-# To add a tool: copy a block, fill the fields, set a new `num`. Empty link
-# fields are simply not rendered, so leave unknown URLs as "".
+# To add a tool: copy a block and fill the fields. Empty link fields are simply
+# not rendered, so leave unknown URLs as "".
 # ============================================================================
 
 - id: usc
-  num: "01"
   image: "img/usc.jpg"   # empty = placeholder
   title: "Urban Solar Carver"
   acronym: "USC"
@@ -24,19 +23,12 @@
     Grasshopper.
   stats_en: ""
   stats_el: ""
-  released: "2026"
-  stack: ["Python", "GPU / CUDA", "Grasshopper", "Rhino", "voxel"]
-  paper_en: "ReSBE 2026 (forthcoming)"
-  paper_el: "ReSBE 2026 (υπό έκδοση)"
-  license_en: ""
-  license_el: ""
   links:
     repository: "https://github.com/avarth/UrbanSolarCarver"
     doi: ""
     live: ""
 
 - id: atlas
-  num: "02"
   image: "img/atlas.jpg"   # empty = placeholder
   title: "Greek Toponymic Atlas"
   title_el: "Ψηφιακός Άτλας Ελληνικών Τοπωνυμίων"
@@ -54,12 +46,6 @@
     πλοηγήσιμο χωρικό σύνολο δεδομένων.
   stats_en: "41,932 unique names · 90,592 features"
   stats_el: "41.932 μοναδικά ονόματα · 90.592 σημεία"
-  released: "2026"
-  stack: ["Python", "GIS", "H3", "LLM", "web"]
-  paper_en: ""
-  paper_el: ""
-  license_en: "Code MIT · content CC BY-NC-ND 4.0"
-  license_el: "Κώδικας MIT · περιεχόμενο CC BY-NC-ND 4.0"
   links:
     # Zenodo DOI is the citable anchor. Add the live-atlas and repo URLs here
     # when you want them public (leave "" to hide the link).
@@ -68,7 +54,6 @@
     live: ""
 
 - id: uxindoor
-  num: "03"
   image: "img/uxindoor.jpg"
   title: "UXindoor"
   acronym: ""
@@ -84,19 +69,12 @@
     Αναπτύχθηκε και δοκιμάστηκε σε δημόσια κτίρια γραφείων.
   stats_en: ""
   stats_el: ""
-  released: "2023"
-  stack: ["IEQ", "scoring", "buildings"]
-  paper_en: "SBE23 · E3S Web of Conferences"
-  paper_el: "SBE23 · E3S Web of Conferences"
-  license_en: ""
-  license_el: ""
   links:
     repository: ""
     doi: "https://doi.org/10.1051/e3sconf/202343601003"
     live: ""
 
 - id: authmap
-  num: "04"
   image: "img/xartis-auth.jpg"
   title: "Interactive map of AUTh"
   title_el: "Διαδραστικός χάρτης του ΑΠΘ"
@@ -111,19 +89,12 @@
     παρουσιάστηκε στο Εθνικό Συνέδριο Χαρτογραφίας.
   stats_en: ""
   stats_el: ""
-  released: "2010"
-  stack: ["GIS", "web", "cartography"]
-  paper_en: ""
-  paper_el: ""
-  license_en: ""
-  license_el: ""
   links:
     repository: ""
     doi: ""
     live: ""
 
 - id: grasshopper
-  num: "05"
   image: "img/gh.jpg"
   title: "Rhino / Grasshopper workflows"
   acronym: ""
@@ -139,19 +110,12 @@
     Διατίθενται κατ' απαίτηση.
   stats_en: ""
   stats_el: ""
-  released: ""
-  stack: ["Grasshopper", "Rhino", "Ladybug Tools", "parametric"]
-  paper_en: ""
-  paper_el: ""
-  license_en: ""
-  license_el: ""
   links:
     repository: ""
     doi: ""
     live: ""
 
 - id: nok
-  num: "06"
   image: "img/kinitra-nok.jpg"
   title: "Building Code incentives calculator"
   title_el: "Υπολογιστής περιβαλλοντικών κινήτρων ΝΟΚ"
@@ -170,12 +134,6 @@
     δεικτών.
   stats_en: ""
   stats_el: ""
-  released: ""
-  stack: ["building code", "FAR", "calculator"]
-  paper_en: ""
-  paper_el: ""
-  license_en: ""
-  license_el: ""
   links:
     repository: ""
     doi: ""

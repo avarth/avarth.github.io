@@ -24,9 +24,9 @@
 
     <div class="affil">
       <img src="{{ (cond (eq $lang `el`) `img/uth-el.png` `img/uth-en.png`) | relURL }}"
-           alt="{{ cond (eq $lang `el`) `Πανεπιστήμιο Θεσσαλίας` `University of Thessaly` }}" height="42" loading="lazy">
+           alt="{{ cond (eq $lang `el`) `Πανεπιστήμιο Θεσσαλίας` `University of Thessaly` }}" width="340" height="93" loading="lazy">
       <img src="{{ `img/dept.png` | relURL }}"
-           alt="{{ cond (eq $lang `el`) $p.affiliationShortEl $p.affiliationShortEn }}" height="42" loading="lazy">
+           alt="{{ cond (eq $lang `el`) $p.affiliationShortEl $p.affiliationShortEn }}" width="217" height="130" loading="lazy">
     </div>
 
     <div class="colophon">
