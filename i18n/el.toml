@@ -53,6 +53,7 @@ in_greek      = "στα ελληνικά"
 
 # Publication statuses
 status_under_review = "Υπό κρίση"
+status_accepted     = "Έγινε δεκτό · υπό έκδοση"
 status_submitted    = "Υποβλήθηκε"
 status_published    = "Δημοσιευμένο"
 status_forthcoming  = "Υπό έκδοση"

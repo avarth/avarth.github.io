@@ -53,6 +53,7 @@ in_greek      = "in Greek"
 
 # Publication statuses
 status_under_review = "Under review"
+status_accepted     = "Accepted · in press"
 status_submitted    = "Submitted"
 status_published    = "Published"
 status_forthcoming  = "Forthcoming"

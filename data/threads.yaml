@@ -4,24 +4,28 @@
 # ============================================================================
 
 - num: "01"
+  icon: "form"
   title_en: "Climate-responsive urban form"
   title_el: "Κλιματικά ανταποκρινόμενες αστικές μορφές"
   body_en: "How the shape of cities and their building stock responds to climate, and how planning can steer it toward more liveable, lower-energy outcomes."
   body_el: "Πώς η μορφή των πόλεων και του κτιριακού αποθέματος ανταποκρίνεται στο κλίμα, και πώς ο σχεδιασμός μπορεί να την κατευθύνει προς πιο βιώσιμα αποτελέσματα."
 
 - num: "02"
+  icon: "sun"
   title_en: "Microclimate & urban energy"
   title_el: "Μικροκλίμα & αστική ενέργεια"
   body_en: "Solar access, outdoor thermal comfort and the energy performance of urban dwellings and public space, studied through measurement and simulation."
   body_el: "Ηλιακή πρόσβαση, θερμική άνεση υπαίθριων χώρων και ενεργειακή επίδοση κατοικιών και δημόσιου χώρου, μέσα από μετρήσεις και προσομοιώσεις."
 
 - num: "03"
+  icon: "plan"
   title_en: "Planning instruments & implementation"
   title_el: "Πολεοδομικά εργαλεία & εφαρμογή"
   body_en: "The instruments through which planning shapes the city (building regulations, street-layout plans, regeneration) and how they work in practice."
   body_el: "Τα εργαλεία μέσα από τα οποία ο σχεδιασμός διαμορφώνει την πόλη (όροι δόμησης, ρυμοτομικά σχέδια, αναπλάσεις) και πώς λειτουργούν στην πράξη."
 
 - num: "04"
+  icon: "ai"
   title_en: "Machine learning & Artificial intelligence"
   title_el: "Μηχανική μάθηση & Τεχνητή νοημοσύνη"
   body_en: "Machine learning and artificial intelligence as tools that support urban analysis and planning. A human-centred approach to the new technologies of design and decision-making."

@@ -262,7 +262,10 @@ h1, h2, h3, h4 { font-weight: 600; line-height: 1.06; letter-spacing: -0.018em; 
 /* ---- Interests / two-column lists ---------------------------------------- */
 .cols2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: clamp(1.5rem, 3.5vw, 3rem) clamp(2rem, 5vw, 4.5rem); }
 @media (max-width: 48rem) { .cols2 { grid-template-columns: 1fr; gap: 2rem; } }
-.interest { border-top: 2px solid var(--ink); padding-top: 1rem; }
+.interest { border-top: 2px solid var(--ink); padding-top: 1rem; display: flex; align-items: flex-start; gap: 1.25rem; }
+.interest-body { flex: 1 1 auto; min-width: 0; }
+.interest-icon { flex: none; display: inline-flex; align-items: center; justify-content: center; color: var(--red-ink); }
+.interest-icon svg { width: 2.85rem; height: 2.85rem; }
 .interest h3 { font-size: 1.2rem; font-weight: 600; }
 .interest p { color: var(--ink-2); margin-top: 0.5rem; font-size: 0.98rem; }
 
