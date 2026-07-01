@@ -44,8 +44,8 @@
     έναν αγωγό τριών σταδίων (μορφολογικοί κανόνες, αποσαφήνιση με LLM και
     χειροκίνητη επικύρωση), μετατρέποντας τα ακατέργαστα τοπωνύμια σε ένα
     πλοηγήσιμο χωρικό σύνολο δεδομένων.
-  stats_en: "41,932 unique names · 90,592 features"
-  stats_el: "41.932 μοναδικά ονόματα · 90.592 σημεία"
+  stats_en: ""
+  stats_el: ""
   links:
     # Zenodo DOI is the citable anchor. Add the live-atlas and repo URLs here
     # when you want them public (leave "" to hide the link).
