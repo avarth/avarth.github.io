@@ -54,6 +54,7 @@
   venue: "Computational Urban Science"
   details: "5:51"
   doi: "10.1007/s43762-025-00206-9"
+  cites: "5"
   impact: "IF 3.5"
   status: published
 
@@ -65,6 +66,7 @@
   venue: "Land"
   details: "14(10)"
   doi: "10.3390/land14102083"
+  cites: "6"
   impact: "IF 3.2"
   status: published
 
@@ -87,6 +89,7 @@
   venue: "Land"
   details: "12(2), 414"
   doi: "10.3390/land12020414"
+  cites: "20"
   impact: "IF 3.9"
   status: published
 
@@ -98,6 +101,7 @@
   venue: "Energy Sources, Part B: Economics, Planning, and Policy"
   details: "16(8)"
   doi: "10.1080/15567249.2021.1916796"
+  cites: "4"
   impact: "IF 3.2"
   status: published
 
@@ -110,7 +114,7 @@
   details: "75, 103379"
   doi: "10.1016/j.scs.2021.103379"
   impact: "IF 5.1"
-  cites: "20"
+  cites: "25"
   status: published
 
 - key: J7
@@ -122,7 +126,7 @@
   details: "78"
   doi: "10.1016/j.compenvurbsys.2019.101387"
   impact: "IF 4.0"
-  cites: "35"
+  cites: "39"
   status: published
 
 - key: J8
@@ -133,6 +137,7 @@
   venue: "Applied Geomatics"
   details: "11(2), 197–213"
   doi: "10.1007/s12518-019-00254-x"
+  cites: "9"
   status: published
 
 - key: J9
@@ -153,7 +158,7 @@
   details: "28, 135–145"
   doi: "10.1016/j.scs.2016.09.006"
   impact: "IF 5.1"
-  cites: "150"
+  cites: "168"
   status: published
 
 - key: J11
@@ -165,7 +170,7 @@
   details: "99, 303–312"
   doi: "10.1016/j.enbuild.2015.04.046"
   impact: "IF 4.6"
-  cites: "60"
+  cites: "66"
   status: published
 
 # ----------------------------------------------------------------------------
@@ -227,6 +232,7 @@
   venue: "In Dabija, A.-M. (ed.), Energy Efficient Building Design, Springer Nature"
   details: "185–198"
   doi: "10.1007/978-3-030-40671-4_12"
+  cites: "1"
   status: published
 
 - key: B5
@@ -292,6 +298,7 @@
   title: "Follow the shade: Detection of optimally shaded pedestrian paths within the historic city center of Thessaloniki"
   venue: "IOP Conference Series: Earth and Environmental Science, 1196(1), 012070 (SBE23, Thessaloniki)"
   doi: "10.1088/1755-1315/1196/1/012070"
+  cites: "8"
   status: published
 
 - key: IC2
@@ -318,6 +325,7 @@
   title: "Optimisation of outdoor shading devices with thermal comfort criteria: The case of the Venetian Port of Chania"
   venue: "IOP Conference Series: Earth and Environmental Science, 410, 012058"
   doi: "10.1088/1755-1315/410/1/012058"
+  cites: "7"
   status: published
 
 - key: IC5
