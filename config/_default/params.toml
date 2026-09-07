@@ -45,10 +45,10 @@ themeColorDark  = "#1c1c1a"   # browser UI colour, dark theme (matches CSS dark 
 
 # --- Bibliometrics (refresh before tenure milestones) ----------------------
 [bibliometrics]
-  asOf             = "June 2026"
-  asOfEl           = "Ιούνιο 2026"
-  scholarCitations = 524
-  scholarH         = 7
-  scopusCitations  = 306
-  s2Citations      = 313
+  asOf             = "September 2026"
+  asOfEl           = "Σεπτέμβριο 2026"
+  scholarCitations = 564
+  scholarH         = 8
+  scopusCitations  = 349
+  s2Citations      = 337
   journalArticles  = 11

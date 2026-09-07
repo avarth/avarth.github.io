@@ -214,6 +214,14 @@
 # ----------------------------------------------------------------------------
 # International conference papers
 # ----------------------------------------------------------------------------
+- key: IC13
+  type: conference
+  year: 2026
+  authors: "Perperidou, D. G., Pantazis, D., Daverona, A. C. & Vartholomaios, A."
+  title: "Integrating GIS and Urban Informatics for Urban Air Mobility (UAM) Infrastructure Planning"
+  venue: "ISPRS Annals of the Photogrammetry, Remote Sensing and Spatial Information Sciences (10th International Conference on Smart Data and Smart Cities, GeoSofia 2026, Sofia, 28 Sep - 2 Oct 2026)"
+  status: accepted
+
 - key: IC10
   type: conference
   year: 2026
@@ -318,6 +326,42 @@
 # ----------------------------------------------------------------------------
 # Greek-origin entries carry `lang: el` + *_el fields: English (translated) is
 # shown on the EN site with "(in Greek)"; the Greek original shows on /el/.
+- key: NC8
+  type: national
+  year: 2026
+  lang: el
+  authors: "Vartholomaios, A."
+  authors_el: "Βαρθολομαίος, Α."
+  title: "The integration of generative artificial intelligence into spatial planning education in Greece"
+  title_el: "Η ενσωμάτωση της παραγωγικής τεχνητής νοημοσύνης στην εκπαίδευση του χωρικού σχεδιασμού στην Ελλάδα"
+  venue: "2nd Scientific Conference on Spatial Planning and Development: Resilience of Cities and Regions, Thessaloniki, 5-6 Oct 2026"
+  venue_el: "2ο Επιστημονικό Συνέδριο Χωρικού Σχεδιασμού και Ανάπτυξης: Ανθεκτικότητα Πόλεων και Περιφερειών, Θεσσαλονίκη, 5-6 Οκτωβρίου 2026"
+  status: accepted
+
+- key: NC9
+  type: national
+  year: 2026
+  lang: el
+  authors: "Moschopoulos, G., Ampatzidis, D., Konstantinidis, A., Nedas, E. & Vartholomaios, A."
+  authors_el: "Μοσχόπουλος, Γ., Αμπατζίδης, Δ., Κωνσταντινίδης, Α., Νέδας, Ε. & Βαρθολομαίος, Α."
+  title: "The topographic network of the Municipality of Thessaloniki: history and connection to the official state geodetic reference system (GGRS87)"
+  title_el: "Το τοπογραφικό δίκτυο του Δήμου Θεσσαλονίκης: Ιστορία και σύνδεση με το επίσημο κρατικό Γεωδαιτικό Σύστημα Αναφοράς (ΕΓΣΑ87)"
+  venue: "2nd Scientific Conference on Spatial Planning and Development: Resilience of Cities and Regions, Thessaloniki, 5-6 Oct 2026"
+  venue_el: "2ο Επιστημονικό Συνέδριο Χωρικού Σχεδιασμού και Ανάπτυξης: Ανθεκτικότητα Πόλεων και Περιφερειών, Θεσσαλονίκη, 5-6 Οκτωβρίου 2026"
+  status: accepted
+
+- key: NC10
+  type: national
+  year: 2026
+  lang: el
+  authors: "Konstantinidis, A., Ntouros, K., Ampatzidis, D., Botsis, D. & Vartholomaios, A."
+  authors_el: "Κωνσταντινίδης, Α., Ντούρος, Κ., Αμπατζίδης, Δ., Μπότσης, Δ. & Βαρθολομαίος, Α."
+  title: "The aesthetics of climate change: how cartographic representation constructs a narrative"
+  title_el: "Η αισθητική της κλιματικής μεταβολής: πώς η χαρτογραφική απεικόνιση κατασκευάζει αφήγημα"
+  venue: "2nd Scientific Conference on Spatial Planning and Development: Resilience of Cities and Regions, Thessaloniki, 5-6 Oct 2026"
+  venue_el: "2ο Επιστημονικό Συνέδριο Χωρικού Σχεδιασμού και Ανάπτυξης: Ανθεκτικότητα Πόλεων και Περιφερειών, Θεσσαλονίκη, 5-6 Οκτωβρίου 2026"
+  status: accepted
+
 - key: NC1
   type: national
   year: 2025

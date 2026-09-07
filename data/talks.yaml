@@ -2,6 +2,15 @@
 # Same field shape as the other CV sections (when/what/where/note all optional).
 # Source of truth: career_strategy/cv/presentations.md (CV §8).
 
+- when_en: "Oct 2026"
+  when_el: "Οκτ 2026"
+  what_en: "The integration of generative artificial intelligence into spatial planning education in Greece"
+  what_el: "Η ενσωμάτωση της παραγωγικής τεχνητής νοημοσύνης στην εκπαίδευση του χωρικού σχεδιασμού στην Ελλάδα"
+  where_en: "2nd Scientific Conference on Spatial Planning and Development: Resilience of Cities and Regions, Thessaloniki"
+  where_el: "2ο Επιστημονικό Συνέδριο Χωρικού Σχεδιασμού και Ανάπτυξης: Ανθεκτικότητα Πόλεων και Περιφερειών, Θεσσαλονίκη"
+  note_en: "Accepted oral presentation (upcoming)"
+  note_el: "Αποδεκτή προφορική ανακοίνωση (προσεχώς)"
+
 - when_en: "2026"
   when_el: "2026"
   what_en: "New technologies in bioclimatic neighbourhood design"
