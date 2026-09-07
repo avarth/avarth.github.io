@@ -214,6 +214,14 @@
 # ----------------------------------------------------------------------------
 # International conference papers
 # ----------------------------------------------------------------------------
+- key: IC14
+  type: conference
+  year: 2026
+  authors: "Vartholomaios, A."
+  title: "Urban Solar Carver: a GPU-accelerated framework for solar-driven urban form finding"
+  venue: "Lecture Notes in Civil Engineering, Springer (ReSBE 2026 Conference, Thessaloniki, 20-23 Oct 2026)"
+  status: accepted
+
 - key: IC13
   type: conference
   year: 2026
@@ -471,7 +479,23 @@
   authors: "Vartholomaios, A."
   title: "Urban buzzwords in practice: rhetoric, method, and the politics of diffusion"
   venue: "Global NEST Journal"
-  status: accepted
+  status: under_review
+
+- key: UR4
+  type: under_review
+  year: 2026
+  authors: "Vartholomaios, A."
+  title: "FAR-centric urbanism: how development intensity comes to govern urban form"
+  venue: "International Planning Studies"
+  status: under_review
+
+- key: UR5
+  type: under_review
+  year: 2026
+  authors: "Manapragada, N. V. S. K., Vartholomaios, A. & Natanian, J."
+  title: "Machine learning for climate-responsive urban design and planning: a review"
+  venue: "Sustainable Cities and Society"
+  status: under_review
 
 # ----------------------------------------------------------------------------
 # Other scholarly work
