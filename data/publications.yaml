@@ -15,6 +15,36 @@
 # ----------------------------------------------------------------------------
 # Peer-reviewed international journal articles
 # ----------------------------------------------------------------------------
+- key: J12
+  type: journal
+  year: 2026
+  authors: "Vartholomaios, A. & Perperidou, D. G. Ch."
+  title: "Can Urban Planners Rely on Large Language Models? An Exploratory Evaluation of Four Frontier Models on Two Contested Greek Masterplans"
+  venue: "Smart Cities"
+  details: "9(9), 143"
+  doi: "10.3390/smartcities9090143"
+  impact: "IF 5.5"
+  status: published
+
+- key: J13
+  type: journal
+  year: 2026
+  authors: "Ampatzidis, D., Vartholomaios, A., Perperidou, D.-G. Ch. & Demirtzoglou, N."
+  title: "Probabilistic Modelling of Parcel Area Uncertainty: Implications for Land Administration and Urban Planning"
+  venue: "Geomatics"
+  details: "6(4)"
+  doi: "10.3390/geomatics6040085"
+  status: published
+
+- key: J14
+  type: journal
+  year: 2026
+  authors: "Vartholomaios, A."
+  title: "Urban buzzwords in practice: Rhetoric, method, and the politics of diffusion"
+  venue: "Global NEST Journal"
+  doi: "10.30955/gnj.08366"
+  status: published
+
 - key: J1
   type: journal
   year: 2025
@@ -457,46 +487,6 @@
 # ----------------------------------------------------------------------------
 # Under review & submitted
 # ----------------------------------------------------------------------------
-- key: UR1
-  type: under_review
-  year: 2026
-  authors: "Vartholomaios, A. & Perperidou, D."
-  title: "Can urban planners rely on Large Language Models? Prompt-framing experiments with frontier models on two contested masterplans"
-  venue: "Smart Cities (MDPI)"
-  status: under_review
-
-- key: UR2
-  type: under_review
-  year: 2026
-  authors: "Ampatzidis, D., Vartholomaios, A., Perperidou, D. & Demirtzoglou, N."
-  title: "Probabilistic modelling of parcel area uncertainty: implications for land administration and urban planning"
-  venue: "Urban Geomatics"
-  status: under_review
-
-- key: UR3
-  type: under_review
-  year: 2026
-  authors: "Vartholomaios, A."
-  title: "Urban buzzwords in practice: rhetoric, method, and the politics of diffusion"
-  venue: "Global NEST Journal"
-  status: under_review
-
-- key: UR4
-  type: under_review
-  year: 2026
-  authors: "Vartholomaios, A."
-  title: "FAR-centric urbanism: how development intensity comes to govern urban form"
-  venue: "International Planning Studies"
-  status: under_review
-
-- key: UR5
-  type: under_review
-  year: 2026
-  authors: "Manapragada, N. V. S. K., Vartholomaios, A. & Natanian, J."
-  title: "Machine learning for climate-responsive urban design and planning: a review"
-  venue: "Sustainable Cities and Society"
-  status: under_review
-
 # ----------------------------------------------------------------------------
 # Other scholarly work
 # ----------------------------------------------------------------------------
