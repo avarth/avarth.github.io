@@ -15,6 +15,27 @@
 # ----------------------------------------------------------------------------
 # Peer-reviewed international journal articles
 # ----------------------------------------------------------------------------
+- key: J15
+  type: journal
+  year: 2026
+  authors: "Manapragada, N. V. S. K., Vartholomaios, A. & Natanian, J."
+  title: "Machine Learning for Climate-Responsive Urban Design and Planning: A Scoping Review"
+  venue: "Sustainable Cities and Society"
+  details: "107991"
+  doi: "10.1016/j.scs.2026.107991"
+  impact: "IF 5.1"
+  status: published
+
+- key: J16
+  type: journal
+  year: 2026
+  authors: "Eftychiadou, O., Vartholomaios, A. & Asprogerakas, E."
+  title: "Declared Unauthorised Construction in Greece: An Indicator-Based Spatial Analysis"
+  venue: "European Journal of Geography"
+  details: "17(1), 358-378"
+  doi: "10.48088/ejg.o.eft.17.1.358.378"
+  status: published
+
 - key: J12
   type: journal
   year: 2026
