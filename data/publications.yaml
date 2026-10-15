@@ -553,3 +553,51 @@
   venue: "DPRD, University of Thessaly, Volos"
   venue_el: "ΤΜΧΠΠΑ, Πανεπιστήμιο Θεσσαλίας, Βόλος"
   status: published
+
+- key: O4
+  type: other
+  year: 2023
+  lang: el
+  authors: "Andreou, E., Antoniou, P., Vartholomaios, A., Doulgeroglou, E., Bessa, K. & Mylonas, S."
+  authors_el: "Ανδρέου, Ε., Αντωνίου, Π., Βαρθολομαίος, Α., Δουλγέρογλου, Ε., Μπέσσα, Κ. & Μυλωνάς, Σ."
+  title: "Drafting an Action Plan for a Climate-Neutral, Smart and Resilient Central Macedonia"
+  title_el: "Σύνταξη Σχεδίου Δράσης για μια Κλιματικά Ουδέτερη, Έξυπνη και Ανθεκτική Κεντρική Μακεδονία"
+  venue: "Technical Chamber of Greece / Central Macedonia Section (TEE-TKM), Thessaloniki"
+  venue_el: "ΤΕΕ-ΤΚΜ, Θεσσαλονίκη"
+  status: published
+
+- key: O5
+  type: other
+  year: 2019
+  lang: el
+  authors: "Vartholomaios, A."
+  authors_el: "Βαρθολομαίος, Α."
+  title: "Adaptation of the environmental analysis of the canopies of the Venetian Port of Chania to the Ministry of Culture decision approving the DLTCh study"
+  title_el: "Προσαρμογή της περιβαλλοντικής ανάλυσης των σκιαδίων του Ενετικού Λιμένα σύμφωνα με την απόφαση του Υπουργού Πολιτισμού περί έγκρισης της μελέτης του Δ.Λ.Τ.Χ."
+  venue: "Municipal Port Fund of Chania (DLTCh)"
+  venue_el: "Δημοτικό Λιμενικό Ταμείο Χανίων"
+  status: published
+
+- key: O6
+  type: other
+  year: 2017
+  lang: el
+  authors: "Vartholomaios, A."
+  authors_el: "Βαρθολομαίος, Α."
+  title: "Investigation of the environmental design of the canopies and production of related diagrams and maps"
+  title_el: "Διερεύνηση περιβαλλοντικού σχεδιασμού των στεγάστρων και δημιουργία σχετικών διαγραμμάτων και χαρτών"
+  venue: "Municipal Port Fund of Chania & School of Architecture, AUTh"
+  venue_el: "Δημοτικό Λιμενικό Ταμείο Χανίων & Τμήμα Αρχιτεκτόνων Μηχανικών ΑΠΘ"
+  status: published
+
+- key: O7
+  type: other
+  year: 2015
+  lang: el
+  authors: "Vartholomaios, A. & Protogeros, N."
+  authors_el: "Βαρθολομαίος, Α. & Πρωτόγερος, Ν."
+  title: "Study on the impact of the environmental upgrade of Eleftherias Square"
+  title_el: "Μελέτη Επίδρασης της Περιβαλλοντικής Αναβάθμισης της Πλατείας Ελευθερίας"
+  venue: "In: Regeneration of Eleftherias Square, Technical Report of the Final Architectural Design, Municipality of Thessaloniki"
+  venue_el: "Στο: Ανάπλαση της Πλατείας Ελευθερίας, Τεχνική Έκθεση Οριστικής Μελέτης Αρχιτεκτονικών, Δήμος Θεσσαλονίκης"
+  status: published
