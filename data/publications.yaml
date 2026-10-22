@@ -276,9 +276,11 @@
   type: conference
   year: 2026
   authors: "Vartholomaios, A."
-  title: "Urban Solar Carver: a GPU-accelerated framework for solar-driven urban form finding"
-  venue: "Lecture Notes in Civil Engineering, Springer (ReSBE 2026 Conference, Thessaloniki, 20-23 Oct 2026)"
-  status: accepted
+  title: "Urban Solar Carver: A GPU-Accelerated Framework for Solar-Driven Urban Form Finding"
+  venue: "In: Braganca, L. et al. (eds) ReShaping the Built Environment through Sustainability and Circularity (ReSBE 2026). Lecture Notes in Civil Engineering, vol. 905, Springer"
+  details: "600-607"
+  doi: "10.1007/978-3-032-34930-9_70"
+  status: published
 
 - key: IC13
   type: conference
