@@ -12,7 +12,7 @@
       <h2 class="section-title" id="research-h"><span class="idx num" aria-hidden="true">01</span> {{ i18n "section_research" }}</h2>
       <p class="section-lead">{{ i18n "section_research_lead" }}</p>
     </div>
-    <div class="cols2">
+    <div class="cols3">
       {{ range hugo.Data.threads }}
         {{ $title := cond (eq $lang "el") .title_el .title_en }}
         {{ $body := cond (eq $lang "el") .body_el .body_en }}
