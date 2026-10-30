@@ -410,18 +410,6 @@
   venue_el: "2ο Επιστημονικό Συνέδριο Χωρικού Σχεδιασμού και Ανάπτυξης: Ανθεκτικότητα Πόλεων και Περιφερειών, Θεσσαλονίκη, 5-6 Οκτωβρίου 2026"
   status: published
 
-- key: NC9
-  type: national
-  year: 2026
-  lang: el
-  authors: "Moschopoulos, G., Ampatzidis, D., Konstantinidis, A., Nedas, E. & Vartholomaios, A."
-  authors_el: "Μοσχόπουλος, Γ., Αμπατζίδης, Δ., Κωνσταντινίδης, Α., Νέδας, Ε. & Βαρθολομαίος, Α."
-  title: "The topographic network of the Municipality of Thessaloniki: history and connection to the official state geodetic reference system (GGRS87)"
-  title_el: "Το τοπογραφικό δίκτυο του Δήμου Θεσσαλονίκης: Ιστορία και σύνδεση με το επίσημο κρατικό Γεωδαιτικό Σύστημα Αναφοράς (ΕΓΣΑ87)"
-  venue: "2nd Scientific Conference on Spatial Planning and Development: Resilience of Cities and Regions, Thessaloniki, 5-6 Oct 2026"
-  venue_el: "2ο Επιστημονικό Συνέδριο Χωρικού Σχεδιασμού και Ανάπτυξης: Ανθεκτικότητα Πόλεων και Περιφερειών, Θεσσαλονίκη, 5-6 Οκτωβρίου 2026"
-  status: accepted
-
 - key: NC10
   type: national
   year: 2026
