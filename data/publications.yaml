@@ -285,10 +285,12 @@
 - key: IC13
   type: conference
   year: 2026
-  authors: "Perperidou, D. G., Pantazis, D., Daverona, A. C. & Vartholomaios, A."
+  authors: "Perperidou, D. G. Ch., Pantazis, D. N., Daverona, A. C. & Vartholomaios, A."
   title: "Integrating GIS and Urban Informatics for Urban Air Mobility (UAM) Infrastructure Planning"
-  venue: "ISPRS Annals of the Photogrammetry, Remote Sensing and Spatial Information Sciences (10th International Conference on Smart Data and Smart Cities, GeoSofia 2026, Sofia, 28 Sep - 2 Oct 2026)"
-  status: accepted
+  venue: "ISPRS Annals of the Photogrammetry, Remote Sensing and Spatial Information Sciences (GeoSofia 2026, Sofia)"
+  details: "XII-4/W2-2026, 171-177"
+  doi: "10.5194/isprs-annals-XII-4-W2-2026-171-2026"
+  status: published
 
 - key: IC10
   type: conference
@@ -406,7 +408,7 @@
   title_el: "Η ενσωμάτωση της παραγωγικής τεχνητής νοημοσύνης στην εκπαίδευση του χωρικού σχεδιασμού στην Ελλάδα"
   venue: "2nd Scientific Conference on Spatial Planning and Development: Resilience of Cities and Regions, Thessaloniki, 5-6 Oct 2026"
   venue_el: "2ο Επιστημονικό Συνέδριο Χωρικού Σχεδιασμού και Ανάπτυξης: Ανθεκτικότητα Πόλεων και Περιφερειών, Θεσσαλονίκη, 5-6 Οκτωβρίου 2026"
-  status: accepted
+  status: published
 
 - key: NC9
   type: national
@@ -430,7 +432,7 @@
   title_el: "Η αισθητική της κλιματικής μεταβολής: πώς η χαρτογραφική απεικόνιση κατασκευάζει αφήγημα"
   venue: "2nd Scientific Conference on Spatial Planning and Development: Resilience of Cities and Regions, Thessaloniki, 5-6 Oct 2026"
   venue_el: "2ο Επιστημονικό Συνέδριο Χωρικού Σχεδιασμού και Ανάπτυξης: Ανθεκτικότητα Πόλεων και Περιφερειών, Θεσσαλονίκη, 5-6 Οκτωβρίου 2026"
-  status: accepted
+  status: published
 
 - key: NC1
   type: national
